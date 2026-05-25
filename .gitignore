@@ -1,0 +1,96 @@
+# =========================================================
+# HS2 CDH PCB - KiCad Git Ignore
+# =========================================================
+
+# ---------------------------------------------------------
+# KiCad autosave / backup files
+# ---------------------------------------------------------
+*-backups/
+*.bak
+*.bck
+*.tmp
+*.autosave
+_autosave-*
+.fp-info-cache
+
+# KiCad lock files
+*.lck
+
+# KiCad local/user settings
+*.kicad_prl
+*.kicad_pro-bak
+
+# ---------------------------------------------------------
+# Simulation / cache files
+# ---------------------------------------------------------
+*.cache
+*.net
+*.xml
+*.csv
+
+# ---------------------------------------------------------
+# Generated fabrication outputs
+# ---------------------------------------------------------
+outputs/
+production/
+
+# Gerbers / drill files
+*.gbr
+*.gbrjob
+*.drl
+*.map
+*.pos
+*.rpt
+*.zip
+*.step
+*.stp
+
+# Pick and place / fabrication exports
+*.fab
+*.bom
+*.ipc
+
+# ---------------------------------------------------------
+# OS / editor junk
+# ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# VSCode / JetBrains
+.vscode/
+.idea/
+
+# ---------------------------------------------------------
+# Python / scripting artifacts
+# ---------------------------------------------------------
+__pycache__/
+*.pyc
+
+# ---------------------------------------------------------
+# Temporary exports
+# ---------------------------------------------------------
+*.pdf
+*.svg
+*.png
+
+# ---------------------------------------------------------
+# KEEP TRACKED IMPORTANT PROJECT FILES
+# ---------------------------------------------------------
+!*.kicad_pro
+!*.kicad_sch
+!*.kicad_pcb
+!*.kicad_sym
+!*.kicad_mod
+
+# Keep project libraries
+!libraries/
+!libraries/**
+
+# Keep documentation
+!docs/
+!docs/**
+
+# Keep schematic sheets
+!sheets/
+!sheets/**.history/
+**/.history/

@@ -497,7 +497,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "bbb-cape-template.kicad_pro",
+    "filename": "hs2-cdh-pcb.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -665,18 +665,30 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "bbb-cape-template.kicad_sch",
-        "name": "bbb-cape-template",
+        "filename": "hs2-cdh-pcb.kicad_sch",
+        "name": "hs2-cdh-pcb",
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "IC1-4,R7",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
-      "bbb-cape-template"
+      "hs2-cdh-pcb"
+    ],
+    [
+      "b9a16af5-117f-430a-90b4-e04345c94fab",
+      "bbb_core.kicad_sch"
+    ],
+    [
+      "b4ec322c-7f70-4378-b928-5a977ba67f42",
+      "nor_flash.kicad_sch"
+    ],
+    [
+      "b0136f55-db06-4889-9369-30a271664d5f",
+      "pc104_interface"
     ]
   ],
   "text_variables": {},

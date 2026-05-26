@@ -1,0 +1,63 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e5aefcdf-1552-4881-b70a-fd78aade4bcb")
+	(paper "A4")
+	(title_block
+		(date "2025-11-13")
+	)
+	(lib_symbols)
+	(sheet
+		(at 200.025 135.255)
+		(size 70.485 22.225)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8ce33b21-edd9-45e7-a202-eb79c335ac4d")
+		(property "Sheetname" "PCI-104"
+			(at 200.025 134.5434 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PCI-104.kicad_sch"
+			(at 200.025 158.0646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "PCI-104-Temp"
+				(path "/e5aefcdf-1552-4881-b70a-fd78aade4bcb"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

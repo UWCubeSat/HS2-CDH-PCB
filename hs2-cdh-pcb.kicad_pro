@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1-4,FB1,C1-3,D1-2,F1",
     "variants": []
   },
   "sheets": [
@@ -689,6 +689,10 @@
     [
       "b0136f55-db06-4889-9369-30a271664d5f",
       "pc104_interface"
+    ],
+    [
+      "197a3ee6-82d6-4332-9a6e-f9d2e34511e3",
+      "power_distribution.kicad_sch"
     ]
   ],
   "text_variables": {},

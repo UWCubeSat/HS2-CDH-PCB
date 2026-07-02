@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#PWR1-4,FB1,C1-3,D1-2,F1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -693,6 +693,10 @@
     [
       "197a3ee6-82d6-4332-9a6e-f9d2e34511e3",
       "power_distribution.kicad_sch"
+    ],
+    [
+      "6355119d-218a-4863-a530-2792c4ad5269",
+      "thermal"
     ]
   ],
   "text_variables": {},

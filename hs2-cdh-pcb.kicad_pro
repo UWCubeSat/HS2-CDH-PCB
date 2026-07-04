@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#PWR1-4,#PWR6-9,#PWR14-24,FB1,C1-3,D1-2,F1",
+    "used_designators": "R1-3,R13-14,IC1,J1-2,J5-7,U1,U3-4,#PWR25-28,#PWR119,#PWR121-128,C3-12,Y1",
     "variants": []
   },
   "sheets": [
@@ -697,6 +697,10 @@
     [
       "6355119d-218a-4863-a530-2792c4ad5269",
       "thermal"
+    ],
+    [
+      "c9e6a8cd-17ab-426c-af44-12e99e2c583c",
+      "Payload_USB"
     ]
   ],
   "text_variables": {},

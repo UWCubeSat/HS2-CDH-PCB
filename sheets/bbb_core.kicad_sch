@@ -4408,7 +4408,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 58.42) (xy 135.89 58.42)
+			(xy 116.84 58.42) (xy 137.16 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5356,7 +5356,7 @@
 	)
 	(global_label "SPI0.SCLK"
 		(shape output)
-		(at 135.89 58.42 0)
+		(at 137.16 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5366,7 +5366,7 @@
 		)
 		(uuid "1dd41c3a-c968-4812-aace-08be850f3988")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.6465 58.42 0)
+			(at 149.9165 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

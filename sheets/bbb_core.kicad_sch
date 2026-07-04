@@ -3308,7 +3308,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 60.96) (xy 104.14 60.96)
+			(xy 83.82 60.96) (xy 104.14 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3558,16 +3558,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 58.42) (xy 135.89 58.42)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4e71a41d-d809-4c3c-8386-93037238a241")
-	)
-	(wire
-		(pts
 			(xy 85.09 73.66) (xy 104.14 73.66)
 		)
 		(stroke
@@ -3658,7 +3648,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 63.5) (xy 104.14 63.5)
+			(xy 83.82 63.5) (xy 104.14 63.5)
 		)
 		(stroke
 			(width 0)
@@ -4008,7 +3998,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 50.8) (xy 104.14 50.8)
+			(xy 83.82 50.8) (xy 104.14 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4108,7 +4098,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 58.42) (xy 104.14 58.42)
+			(xy 83.82 58.42) (xy 104.14 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4308,7 +4298,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 53.34) (xy 104.14 53.34)
+			(xy 83.82 53.34) (xy 104.14 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4415,6 +4405,16 @@
 			(type solid)
 		)
 		(uuid "dab9d51b-fc61-44d8-a481-6864e5788cce")
+	)
+	(wire
+		(pts
+			(xy 116.84 58.42) (xy 135.89 58.42)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "db0fc3b7-667b-4237-a9af-947506e97e72")
 	)
 	(wire
 		(pts
@@ -4626,16 +4626,6 @@
 		)
 		(uuid "0a2c99a1-a728-4029-a46c-af9b2ad89c9f")
 	)
-	(label "GPIO5"
-		(at 135.89 53.34 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0d818e9c-e550-4ee8-8971-0ed65bdeecde")
-	)
 	(label "I2C2.SDA"
 		(at 135.89 55.88 180)
 		(effects
@@ -4665,16 +4655,6 @@
 			(justify right bottom)
 		)
 		(uuid "28551e92-db65-478f-a750-bb3df7c7172a")
-	)
-	(label "GPIO3"
-		(at 85.09 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2a165b51-fcbf-46ab-b135-940761bee0ca")
 	)
 	(label "GPIO51"
 		(at 135.89 50.8 180)
@@ -4836,16 +4816,6 @@
 		)
 		(uuid "5f0e2721-eac2-48d5-a1a9-58bdf2b3b5c7")
 	)
-	(label "GPIO48"
-		(at 85.09 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f3e6486-c9ff-4c19-bf6a-4e92be9c8170")
-	)
 	(label "GPIO31"
 		(at 85.09 48.26 0)
 		(effects
@@ -4975,16 +4945,6 @@
 			(justify right bottom)
 		)
 		(uuid "8faa634f-a5c2-44e0-8837-0a6851aafa90")
-	)
-	(label "GPIO117"
-		(at 85.09 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "936b7724-3215-442f-8b8a-ae647b3253c3")
 	)
 	(label "PWR_BUT"
 		(at 85.09 43.18 0)
@@ -5266,16 +5226,6 @@
 		)
 		(uuid "de1f18f8-4285-4d9c-81d1-26e0e27be774")
 	)
-	(label "GPIO2"
-		(at 135.89 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e4918799-86e3-4043-8169-f5cddfa8fc0c")
-	)
 	(label "AIN5"
 		(at 135.89 76.2 180)
 		(effects
@@ -5295,16 +5245,6 @@
 			(justify right bottom)
 		)
 		(uuid "e8ef2e36-c990-4e77-9060-e085eaf3b133")
-	)
-	(label "GPIO49"
-		(at 85.09 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e9ac83f5-3d93-45fd-9c67-5f2c41c9c426")
 	)
 	(label "I2C2.SCL"
 		(at 161.29 121.92 180)
@@ -5346,16 +5286,6 @@
 		)
 		(uuid "f533b19c-028f-40f2-9a9e-8f880f52efaf")
 	)
-	(label "GPIO4"
-		(at 85.09 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f7eb288e-5952-4e21-9c21-0b999756503e")
-	)
 	(label "AIN2"
 		(at 85.09 78.74 0)
 		(effects
@@ -5375,6 +5305,174 @@
 			(justify right bottom)
 		)
 		(uuid "fca82c44-e52c-4c01-ba85-e1b0fae220ee")
+	)
+	(global_label "SPI0.CS2"
+		(shape output)
+		(at 83.82 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14f669d9-6056-4970-a8a8-5137a118f6f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.1521 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI0.CS3"
+		(shape output)
+		(at 83.82 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1931512b-5799-4937-ab83-827abc5a58e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.1521 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI0.SCLK"
+		(shape output)
+		(at 135.89 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1dd41c3a-c968-4812-aace-08be850f3988")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.6465 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPI0.D0"
+		(shape input)
+		(at 83.82 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b8a0584-3061-438f-a689-3f8e5671dba6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.3616 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI0.CS1"
+		(shape output)
+		(at 83.82 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b15c8386-6157-495f-82c5-a56a3815def8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.1521 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI0.CS0"
+		(shape output)
+		(at 83.82 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0b1e574-299c-4356-af95-1198be0b0360")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.1521 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SPI0.D1"
+		(shape output)
+		(at 135.89 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d87ef66f-acbc-43e6-a578-f5980b3e149d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.3484 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x23_Odd_Even")

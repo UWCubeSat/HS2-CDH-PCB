@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#PWR1-4,#PWR6-9,#PWR14-24,FB1,C1-3,D1-2,F1",
+    "used_designators": "IC5-8,#PWR1-4,#PWR6-9,#PWR14-35,FB1,C1-12,D1-2,U1,U3-11,F1",
     "variants": []
   },
   "sheets": [
@@ -684,7 +684,7 @@
     ],
     [
       "b4ec322c-7f70-4378-b928-5a977ba67f42",
-      "nor_flash.kicad_sch"
+      "storage"
     ],
     [
       "b0136f55-db06-4889-9369-30a271664d5f",
@@ -697,6 +697,10 @@
     [
       "6355119d-218a-4863-a530-2792c4ad5269",
       "thermal"
+    ],
+    [
+      "4d115d59-e66a-4f9f-ab9e-2e7383353607",
+      "ADCS sun ADC"
     ]
   ],
   "text_variables": {},

@@ -63,6 +63,52 @@
 		)
 	)
 	(sheet
+		(at 15.24 115.57)
+		(size 49.53 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4d115d59-e66a-4f9f-ab9e-2e7383353607")
+		(property "Sheetname" "ADCS sun ADC"
+			(at 15.24 114.8584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/adcs_sun_adc.kicad_sch"
+			(at 15.24 149.1746 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 78.74 75.946)
 		(size 49.022 33.02)
 		(exclude_from_sim no)
@@ -155,8 +201,8 @@
 		)
 	)
 	(sheet
-		(at 175.26 22.86)
-		(size 80.01 139.7)
+		(at 121.92 17.78)
+		(size 54.61 46.99)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -170,8 +216,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "b4ec322c-7f70-4378-b928-5a977ba67f42")
-		(property "Sheetname" "nor_flash.kicad_sch"
-			(at 175.26 22.1484 0)
+		(property "Sheetname" "storage"
+			(at 121.92 17.0684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -181,8 +227,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/nor_flash.kicad_sch"
-			(at 175.26 163.1446 0)
+		(property "Sheetfile" "sheets/storage.kicad_sch"
+			(at 121.92 65.3546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

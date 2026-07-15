@@ -4,5 +4,1430 @@
 	(generator_version "10.0")
 	(uuid "d220532b-ad3c-44d6-8729-725224b7657a")
 	(paper "A4")
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Sensor_Temperature:MAX31856"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "MAX31856"
+				(at 13.97 13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+				(at 3.81 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+				(at -1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Thermocouple converter serial"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TSSOP*14*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX31856_0_1"
+				(rectangle
+					(start -10.16 12.7)
+					(end 10.16 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 3.175) (xy -0.762 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 3.175) (xy -0.127 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 2.54) (xy -0.127 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.905) (xy -0.127 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -0.127 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 0.635) (xy -0.127 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.762 3.175)
+					(mid -0.127 3.8073)
+					(end 0.508 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.127 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 3.175) (xy 0.508 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.508 -1.905)
+					(end -0.762 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "MAX31856_1_1"
+				(pin power_in line
+					(at -2.54 -15.24 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "BIAS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "T-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "T+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 15.24 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "DNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 7.62 180)
+					(length 2.54)
+					(name "~{DRDY}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 15.24 270)
+					(length 2.54)
+					(name "DVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "~{CS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -7.62 180)
+					(length 2.54)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -15.24 90)
+					(length 2.54)
+					(name "DGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 82.55 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3824818d-835b-4f2e-b4c7-5d832b054cfe")
+		(property "Reference" "U8"
+			(at 87.2333 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 87.2333 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 86.36 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 81.28 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 82.55 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "479a9c0a-a481-4dd7-9d49-a7cd3e4d3ea1")
+		)
+		(pin "8"
+			(uuid "f9098bf1-b806-4782-a8be-a2ba51898a42")
+		)
+		(pin "6"
+			(uuid "2f6c185e-36b9-45d8-aeb4-f40bcabe64ad")
+		)
+		(pin "7"
+			(uuid "dc676941-9e0c-404d-8a9c-689333463fb8")
+		)
+		(pin "10"
+			(uuid "53b3a2d0-10a1-4ce3-93d7-1121f88f2c6c")
+		)
+		(pin "3"
+			(uuid "2cf46eb5-0593-4496-9023-bd36fca05fbf")
+		)
+		(pin "14"
+			(uuid "a21f650a-972f-496c-a22c-31cf21349c18")
+		)
+		(pin "13"
+			(uuid "a0eeaf9a-f767-4339-bedb-be215ad5eca3")
+		)
+		(pin "12"
+			(uuid "6402cafd-2b12-4c5c-b4fe-4f8fdf2b3fdf")
+		)
+		(pin "11"
+			(uuid "cf96f526-6ee8-426a-890d-c8a64dba0c21")
+		)
+		(pin "1"
+			(uuid "639485a0-6a54-4324-87cb-c0484883a399")
+		)
+		(pin "2"
+			(uuid "9db8d7f2-8298-4640-918a-5bdd94a4d1b1")
+		)
+		(pin "5"
+			(uuid "654ade4b-96de-4d43-a231-0b995b172734")
+		)
+		(pin "4"
+			(uuid "47ae49a1-b569-4ec5-9572-c3d42ab73e65")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 39.37 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "475bf4f4-9cb2-4ac7-b026-a779833468c4")
+		(property "Reference" "U4"
+			(at 44.0533 99.06 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 44.0533 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 43.18 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 38.1 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 39.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "68953985-3fc7-4d47-9a27-e1d7b04c8226")
+		)
+		(pin "8"
+			(uuid "a635dfa7-53ee-4c26-8619-0801569c689a")
+		)
+		(pin "6"
+			(uuid "7b4b1d0e-ad02-49cb-b15c-7acc24e7a27e")
+		)
+		(pin "7"
+			(uuid "c45ca510-4365-4fbf-9f37-815af6c9435e")
+		)
+		(pin "10"
+			(uuid "3993d8f8-cf42-4f28-95a3-bfce0116fc31")
+		)
+		(pin "3"
+			(uuid "61389181-9071-413e-9b34-4be88d30fee8")
+		)
+		(pin "14"
+			(uuid "c149b64d-dbf8-4586-a478-65d2f247c09f")
+		)
+		(pin "13"
+			(uuid "0a0bc483-fd3f-427b-a532-023fc7d41647")
+		)
+		(pin "12"
+			(uuid "47fcdf98-b808-41a1-ac25-f29ec9d8455f")
+		)
+		(pin "11"
+			(uuid "2bc70e2f-93f8-47bf-aad6-871401605945")
+		)
+		(pin "1"
+			(uuid "17aba8cb-0678-4e3d-b939-d3431855036f")
+		)
+		(pin "2"
+			(uuid "c329b207-6923-44ea-99f9-6a764145860a")
+		)
+		(pin "5"
+			(uuid "10fda806-63e9-4258-8909-cde439d9fdb3")
+		)
+		(pin "4"
+			(uuid "872f5f5b-6908-46b6-af9b-abad8002e7b9")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 82.55 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "47a1e2a1-b5db-4fbf-be4f-52ce97e753d6")
+		(property "Reference" "U9"
+			(at 87.2333 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 87.2333 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 86.36 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 81.28 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 82.55 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "e8cda8ef-8fa6-4f0d-a148-030c510e52ad")
+		)
+		(pin "8"
+			(uuid "5f5e81af-9c9d-4e53-a122-97745b36467f")
+		)
+		(pin "6"
+			(uuid "761bf26b-3fec-41f0-b558-44ceff05004e")
+		)
+		(pin "7"
+			(uuid "ed629486-7707-4765-bd99-5468209b6690")
+		)
+		(pin "10"
+			(uuid "727039ee-fe17-4049-a0b2-dd3ed7f83754")
+		)
+		(pin "3"
+			(uuid "27fcd202-8015-46d6-8293-3f1a38ef79b0")
+		)
+		(pin "14"
+			(uuid "750f4788-3abb-49e7-90aa-4cbc75a1588f")
+		)
+		(pin "13"
+			(uuid "3bcdddbd-7a23-4491-b83c-7d8cc35061de")
+		)
+		(pin "12"
+			(uuid "46b87e19-5de3-43dd-bcbe-b5abd13498d2")
+		)
+		(pin "11"
+			(uuid "c847115b-b9b2-434f-88c6-7d33e046ae42")
+		)
+		(pin "1"
+			(uuid "420484bb-3e22-42a7-8ef5-5803fceb4eb4")
+		)
+		(pin "2"
+			(uuid "32e89d3f-8f66-48de-af65-0003bc17ace9")
+		)
+		(pin "5"
+			(uuid "89e1d68e-433b-4083-a2cd-92f37df65233")
+		)
+		(pin "4"
+			(uuid "7491d572-f865-4cc1-83b0-7caa3a76ee8e")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 82.55 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "571d284a-9062-4a12-beff-aa54ead9cf9a")
+		(property "Reference" "U7"
+			(at 87.2333 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 87.2333 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 86.36 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 81.28 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 82.55 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "f63203dc-7730-4a2d-99b4-2dce269cfd62")
+		)
+		(pin "8"
+			(uuid "34026f54-757f-4351-9a22-a85beaf77452")
+		)
+		(pin "6"
+			(uuid "5db31d58-bf74-4efd-9483-6d84c6e7e7cb")
+		)
+		(pin "7"
+			(uuid "40013fcd-96a4-4e3e-8d74-e087a9730e7a")
+		)
+		(pin "10"
+			(uuid "f03914a2-1247-40e1-8720-9983cf402414")
+		)
+		(pin "3"
+			(uuid "b740b715-b6f5-4c2f-b761-9be13e6ded8e")
+		)
+		(pin "14"
+			(uuid "c1f03aca-5a11-4dc4-8257-f24586cd678c")
+		)
+		(pin "13"
+			(uuid "ae44b87f-159f-4d19-a59b-766cb86baa60")
+		)
+		(pin "12"
+			(uuid "7d41e1e1-32c5-4ca8-8fec-868fccc593ee")
+		)
+		(pin "11"
+			(uuid "4bc4ff3c-2ed3-4220-91c7-cb0667445766")
+		)
+		(pin "1"
+			(uuid "573382e9-4b2a-4975-b860-63f6c8d38142")
+		)
+		(pin "2"
+			(uuid "399fbd30-00f0-41c8-aa31-bfad5bdb276f")
+		)
+		(pin "5"
+			(uuid "5ad8444f-f727-4138-8594-3c51b6641a3b")
+		)
+		(pin "4"
+			(uuid "2fae3e13-9ae4-47fa-8de9-e4fac2f938f6")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 39.37 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8036504a-cb74-4c85-a7ec-dce9216c88aa")
+		(property "Reference" "U3"
+			(at 44.0533 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 44.0533 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 43.18 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 38.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 39.37 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "07ca8030-a361-49ba-8c76-e4950e43d378")
+		)
+		(pin "7"
+			(uuid "8786d90d-fbfc-4713-a05c-3b43bc3cd9e6")
+		)
+		(pin "8"
+			(uuid "25806b1f-6d0b-4057-97ad-b08187c8127b")
+		)
+		(pin "12"
+			(uuid "0ce62bb6-9cf3-4021-a21b-ea5332a9498d")
+		)
+		(pin "11"
+			(uuid "2815dcd3-eca4-4ccd-9278-0aad0fbc6619")
+		)
+		(pin "10"
+			(uuid "551f5431-6a40-4090-a04b-071a53183a2d")
+		)
+		(pin "5"
+			(uuid "6aa03f80-5933-45de-8566-3a5b786caa2b")
+		)
+		(pin "4"
+			(uuid "8ed8e931-6578-4660-a2f6-10ec0e3295c3")
+		)
+		(pin "3"
+			(uuid "89b062fd-da3b-4901-b7f0-9ea9a3c396d5")
+		)
+		(pin "2"
+			(uuid "2500cd0c-71e0-400f-9be9-5e010e021042")
+		)
+		(pin "1"
+			(uuid "5b790a40-2876-4751-a911-4b15eb1169d4")
+		)
+		(pin "13"
+			(uuid "54ff2107-135b-49d4-91ca-c4bd16a227be")
+		)
+		(pin "14"
+			(uuid "cf03e5cd-0dc9-424a-8c0f-2b0d405f224b")
+		)
+		(pin "9"
+			(uuid "1f8beffc-e825-423a-9165-426febebee44")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 39.37 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bb067b0-a010-485e-a673-772c064e7d4b")
+		(property "Reference" "U1"
+			(at 44.0533 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 44.0533 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 43.18 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 38.1 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 39.37 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "3d1779e6-4181-4a44-90c2-285f30c87108")
+		)
+		(pin "8"
+			(uuid "0c049b7c-b6a3-4c9d-b3b9-f740dea7a55e")
+		)
+		(pin "6"
+			(uuid "0c802426-372f-440e-9118-40a6116e9e0b")
+		)
+		(pin "7"
+			(uuid "3163aa09-3cc6-4533-8ad9-f32e54d52696")
+		)
+		(pin "10"
+			(uuid "be02673e-42e5-4c3e-8f4d-d52db3480ac1")
+		)
+		(pin "3"
+			(uuid "8b2c8b57-2134-4a44-ad11-266f459eb732")
+		)
+		(pin "14"
+			(uuid "3024c471-2de1-4aec-bcf1-c02253333f90")
+		)
+		(pin "13"
+			(uuid "1f777ecf-1dbe-4970-a240-b88918186fd0")
+		)
+		(pin "12"
+			(uuid "0e02b84f-9c00-4b54-9e46-7c9be3c09c2d")
+		)
+		(pin "11"
+			(uuid "74f09036-4273-4b16-9cee-8a69063db657")
+		)
+		(pin "1"
+			(uuid "a81f824d-42e3-4ef3-aebf-7febc4766a36")
+		)
+		(pin "2"
+			(uuid "d9e842a1-f979-43f6-bc39-f3d0473a0d46")
+		)
+		(pin "5"
+			(uuid "34d771b9-ce21-4169-8d71-d982b746a4e6")
+		)
+		(pin "4"
+			(uuid "f6471f2b-b30c-4f36-a8f6-0995ece2c627")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 39.37 160.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c510e6d0-f748-4d2c-abc1-ff9f1b83a904")
+		(property "Reference" "U5"
+			(at 44.0533 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 44.0533 144.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 43.18 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 38.1 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 39.37 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "646a6956-591e-4709-975b-1cd45cb27579")
+		)
+		(pin "8"
+			(uuid "e23e8d7c-49c7-4078-b794-9506334e3dd5")
+		)
+		(pin "6"
+			(uuid "fd1cf23a-860d-4bc4-996b-e37382b78c12")
+		)
+		(pin "7"
+			(uuid "71c0ded9-f8f2-47cc-865f-e246b0b4b4a5")
+		)
+		(pin "10"
+			(uuid "99c0ec3d-b0e9-49a5-a3d2-5cc5eb4b60e8")
+		)
+		(pin "3"
+			(uuid "e14431bd-59ba-4469-a8e5-6a5d015c8671")
+		)
+		(pin "14"
+			(uuid "366d8333-528f-4ed5-8885-dc702ea2eccd")
+		)
+		(pin "13"
+			(uuid "0e029f3d-7f0d-4062-b04b-969d4f4f6ed1")
+		)
+		(pin "12"
+			(uuid "c8b6ca74-f342-4a4b-af97-ccc2e5af8bf4")
+		)
+		(pin "11"
+			(uuid "7f47eaf9-d5b1-4553-863c-38c6f90945c2")
+		)
+		(pin "1"
+			(uuid "0457da48-b2a6-44c0-8f23-31e3799b62ad")
+		)
+		(pin "2"
+			(uuid "63e0add8-7e47-42bc-a322-52b3c5bed66e")
+		)
+		(pin "5"
+			(uuid "655ad4d8-3da6-4ec1-bcf4-b78f4084fc32")
+		)
+		(pin "4"
+			(uuid "490cf8ea-5dea-4763-ac80-3b0e95222bbf")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:MAX31856")
+		(at 82.55 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1510fe6-6aea-4441-a58e-c4cb9483da96")
+		(property "Reference" "U6"
+			(at 87.2333 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MAX31856"
+			(at 87.2333 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
+			(at 86.36 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX31856.pdf"
+			(at 81.28 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Thermocouple to Digital Converter with Linearization, TSSOP-14"
+			(at 82.55 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "c3871bbc-a61e-4094-9be4-3f0f0931d054")
+		)
+		(pin "8"
+			(uuid "c4032abc-c27a-4eb7-850e-531856e3f992")
+		)
+		(pin "6"
+			(uuid "9453de23-2d39-40ef-8a18-729f8df3fff6")
+		)
+		(pin "7"
+			(uuid "6b4ed414-3a92-4af2-a5a4-37d6f5be99c4")
+		)
+		(pin "10"
+			(uuid "91808568-5338-40b8-834e-08cbcc42e471")
+		)
+		(pin "3"
+			(uuid "d1daa345-1b5e-4dc7-9d24-9a52f312c7ba")
+		)
+		(pin "14"
+			(uuid "fb9a937c-0c71-49bf-bf52-d2f6ef6d027c")
+		)
+		(pin "13"
+			(uuid "833b2ae6-f952-433d-b499-beafd27282c5")
+		)
+		(pin "12"
+			(uuid "d31f4565-557e-42dc-aa71-f4f67b3d06f2")
+		)
+		(pin "11"
+			(uuid "b47645c4-c569-447f-af27-633420a7d9e7")
+		)
+		(pin "1"
+			(uuid "39330bfa-ac61-49e5-965e-022814ca8dff")
+		)
+		(pin "2"
+			(uuid "662eed7f-56fe-477c-9453-9c2683f31fd5")
+		)
+		(pin "5"
+			(uuid "430e87db-adff-433b-9030-16d78acedf03")
+		)
+		(pin "4"
+			(uuid "73f36af2-0044-4b20-83c1-53370420c99b")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

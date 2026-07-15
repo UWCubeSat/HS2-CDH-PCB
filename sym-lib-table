@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "SFEM064GB1EA1TOIHG111STD1") (type "KiCad") (uri "${KIPRJMOD}/libraries/64GB eMMC SSD/SFEM064GB1EA1TOIHG111STD1.kicad_sym") (options "") (descr ""))
+)

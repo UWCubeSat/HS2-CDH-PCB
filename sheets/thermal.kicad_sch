@@ -2993,7 +2993,7 @@
 			)
 		)
 	)
-	(global_label "TC2_T+"
+	(global_label "THR_TC2_T+"
 		(shape input)
 		(at 69.85 45.72 90)
 		(fields_autoplaced yes)
@@ -3005,7 +3005,7 @@
 		)
 		(uuid "20843ed9-aed9-4712-a81a-5ad313c19ea1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 35.685 90)
+			(at 69.85 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3017,7 +3017,7 @@
 			)
 		)
 	)
-	(global_label "TC5_T+"
+	(global_label "THR_TC5_T+"
 		(shape input)
 		(at 21.59 104.14 90)
 		(fields_autoplaced yes)
@@ -3029,7 +3029,7 @@
 		)
 		(uuid "21d6b99d-fa5a-4dce-92f8-392a73adea11")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.59 94.105 90)
+			(at 21.59 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3041,7 +3041,7 @@
 			)
 		)
 	)
-	(global_label "TC5_T-"
+	(global_label "THR_TC5_T-"
 		(shape input)
 		(at 19.05 104.14 90)
 		(fields_autoplaced yes)
@@ -3053,7 +3053,7 @@
 		)
 		(uuid "2804e334-d97b-46c1-b61d-ecad89e15bfe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.05 94.105 90)
+			(at 19.05 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3089,7 +3089,7 @@
 			)
 		)
 	)
-	(global_label "TC4_T+"
+	(global_label "THR_TC4_T+"
 		(shape input)
 		(at 165.1 45.72 90)
 		(fields_autoplaced yes)
@@ -3101,7 +3101,7 @@
 		)
 		(uuid "3478304c-4449-4c5b-ae0b-4da731cc7479")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.1 35.685 90)
+			(at 165.1 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3137,7 +3137,7 @@
 			)
 		)
 	)
-	(global_label "TC6_T+"
+	(global_label "THR_TC6_T+"
 		(shape input)
 		(at 69.85 104.14 90)
 		(fields_autoplaced yes)
@@ -3149,7 +3149,7 @@
 		)
 		(uuid "41cfa4a1-0551-467d-a4db-af1b78553847")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.85 94.105 90)
+			(at 69.85 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3209,7 +3209,7 @@
 			)
 		)
 	)
-	(global_label "TC8_T-"
+	(global_label "THR_TC8_T-"
 		(shape input)
 		(at 162.56 104.14 90)
 		(fields_autoplaced yes)
@@ -3221,7 +3221,7 @@
 		)
 		(uuid "470890b2-9ca4-4460-bb05-26d5da6b3b7f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.56 94.105 90)
+			(at 162.56 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3305,7 +3305,7 @@
 			)
 		)
 	)
-	(global_label "TC3_T+"
+	(global_label "THR_TC3_T+"
 		(shape input)
 		(at 118.11 45.72 90)
 		(fields_autoplaced yes)
@@ -3317,7 +3317,7 @@
 		)
 		(uuid "546278ca-4cce-41a9-b8ca-49ecaec357b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 35.685 90)
+			(at 118.11 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3353,7 +3353,7 @@
 			)
 		)
 	)
-	(global_label "TC1_T-"
+	(global_label "THR_TC1_T-"
 		(shape input)
 		(at 19.05 45.72 90)
 		(fields_autoplaced yes)
@@ -3365,7 +3365,7 @@
 		)
 		(uuid "5952cbc2-f555-4957-adf6-338ad32bfcf6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.05 35.685 90)
+			(at 19.05 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3425,7 +3425,7 @@
 			)
 		)
 	)
-	(global_label "TC2_T-"
+	(global_label "THR_TC2_T-"
 		(shape input)
 		(at 67.31 45.72 90)
 		(fields_autoplaced yes)
@@ -3437,7 +3437,7 @@
 		)
 		(uuid "720571e0-7e59-41b8-9734-3c5548ca48a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 35.685 90)
+			(at 67.31 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3521,7 +3521,7 @@
 			)
 		)
 	)
-	(global_label "TC7_T+"
+	(global_label "THR_TC7_T+"
 		(shape input)
 		(at 118.11 104.14 90)
 		(fields_autoplaced yes)
@@ -3533,7 +3533,7 @@
 		)
 		(uuid "86258e8b-8116-4d12-b854-311a0dd5ef28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.11 94.105 90)
+			(at 118.11 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3593,7 +3593,7 @@
 			)
 		)
 	)
-	(global_label "TC8_T+"
+	(global_label "THR_TC8_T+"
 		(shape input)
 		(at 165.1 104.14 90)
 		(fields_autoplaced yes)
@@ -3605,7 +3605,7 @@
 		)
 		(uuid "86fd8d71-05cc-4c3a-be22-89093f2ace10")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 165.1 94.105 90)
+			(at 165.1 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3665,7 +3665,7 @@
 			)
 		)
 	)
-	(global_label "TC7_T-"
+	(global_label "THR_TC7_T-"
 		(shape input)
 		(at 115.57 104.14 90)
 		(fields_autoplaced yes)
@@ -3677,7 +3677,7 @@
 		)
 		(uuid "94f8fca2-3cfe-4733-9acf-79adf62b8022")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.57 94.105 90)
+			(at 115.57 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3689,7 +3689,7 @@
 			)
 		)
 	)
-	(global_label "TC6_T-"
+	(global_label "THR_TC6_T-"
 		(shape input)
 		(at 67.31 104.14 90)
 		(fields_autoplaced yes)
@@ -3701,7 +3701,7 @@
 		)
 		(uuid "a377f0f0-5f5f-4444-9fed-8d35f230874f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.31 94.105 90)
+			(at 67.31 89.5693 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3761,7 +3761,7 @@
 			)
 		)
 	)
-	(global_label "TC1_T+"
+	(global_label "THR_TC1_T+"
 		(shape input)
 		(at 21.59 45.72 90)
 		(fields_autoplaced yes)
@@ -3773,7 +3773,7 @@
 		)
 		(uuid "c04fad71-4177-4d69-bae4-f025706a26fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.59 35.685 90)
+			(at 21.59 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3905,7 +3905,7 @@
 			)
 		)
 	)
-	(global_label "TC4_T-"
+	(global_label "THR_TC4_T-"
 		(shape input)
 		(at 162.56 45.72 90)
 		(fields_autoplaced yes)
@@ -3917,7 +3917,7 @@
 		)
 		(uuid "ddbc80c6-b117-4e76-a691-1041efda1776")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.56 35.685 90)
+			(at 162.56 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3977,7 +3977,7 @@
 			)
 		)
 	)
-	(global_label "TC3_T-"
+	(global_label "THR_TC3_T-"
 		(shape input)
 		(at 115.57 45.72 90)
 		(fields_autoplaced yes)
@@ -3989,7 +3989,7 @@
 		)
 		(uuid "e7a514ad-d83e-4bd8-b28a-7eeffd174247")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.57 35.685 90)
+			(at 115.57 31.1493 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -4584,16 +4584,6 @@
 		)
 		(uuid "048cc83a-5d56-465c-9bd2-5a34fa0632a9")
 	)
-	(label "GPIO27"
-		(at 187.96 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "09ae2860-0073-4441-b8ac-f71ee6dd59e5")
-	)
 	(label "SYS_5V"
 		(at 93.98 27.94 270)
 		(effects
@@ -4604,16 +4594,6 @@
 		)
 		(uuid "0a2c99a1-a728-4029-a46c-af9b2ad89c9f")
 	)
-	(label "I2C2.SDA"
-		(at 135.89 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "10ceff52-ebe7-4431-91f6-309d9dca3913")
-	)
 	(label "LCD.DATA8"
 		(at 187.96 78.74 0)
 		(effects
@@ -4623,16 +4603,6 @@
 			(justify left bottom)
 		)
 		(uuid "1ba52525-9754-4877-8256-1aafa89989a6")
-	)
-	(label "GPIO51"
-		(at 135.89 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2a5acbf2-eae2-4aab-a2ca-769f3674f2d1")
 	)
 	(label "LCD.AC_BIAS_E"
 		(at 238.76 68.58 180)
@@ -4774,16 +4744,6 @@
 		)
 		(uuid "785e2bc1-29a2-4425-b80e-f7aa0854cbd5")
 	)
-	(label "GPIO40"
-		(at 135.89 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "85b18407-2355-4a65-b26a-7db04589a269")
-	)
 	(label "PWR_BUT"
 		(at 85.09 43.18 0)
 		(effects
@@ -4823,16 +4783,6 @@
 			(justify left bottom)
 		)
 		(uuid "9dc64861-f73e-43b8-a9b0-629e70095ee4")
-	)
-	(label "GPIO60"
-		(at 135.89 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a3821028-6553-4b3f-8eaf-e104a952a003")
 	)
 	(label "I2C2.SDA"
 		(at 161.29 119.38 180)
@@ -4903,46 +4853,6 @@
 			(justify right bottom)
 		)
 		(uuid "bc9ac341-d905-4c20-8929-b4b76334dca7")
-	)
-	(label "GPIO23"
-		(at 187.96 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be9c3042-bbcb-4219-ab79-763c234d0274")
-	)
-	(label "GPIO7"
-		(at 135.89 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c08a894d-df7a-46fe-b25d-6d596056de3e")
-	)
-	(label "I2C2.SCL"
-		(at 85.09 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c258b5ea-7cde-43a1-9709-97d5673150f4")
-	)
-	(label "GPIO22"
-		(at 187.96 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c488e769-0b34-4ca8-8a4c-ea6fc62a3502")
 	)
 	(label "LCD.DATA0"
 		(at 187.96 88.9 0)
@@ -5290,6 +5200,54 @@
 			)
 		)
 	)
+	(global_label "HEATER_PWM"
+		(shape output)
+		(at 135.89 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f259e70-fd94-40b6-b413-f969e1f818ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.0654 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ACDS_PWM_1"
+		(shape output)
+		(at 135.89 48.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "32a8a7c3-6633-48c4-9839-feb68c5a4431")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.1259 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "SPI1.D1"
 		(shape output)
 		(at 135.89 68.58 0)
@@ -5434,6 +5392,30 @@
 			)
 		)
 	)
+	(global_label "ACDS_GPIO_2"
+		(shape output)
+		(at 187.96 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5ca6c120-57c1-4f24-a58b-c6bc73d50e1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.4216 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SPI1.CS7"
 		(shape output)
 		(at 238.76 45.72 0)
@@ -5447,6 +5429,30 @@
 		(uuid "61f0af9f-d338-4814-89ca-741aea78ea1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 250.4279 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "ACDS_GPIO_1"
+		(shape output)
+		(at 135.89 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "67c8d408-a873-46bd-ab17-305e43d2267e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.4284 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5578,6 +5584,30 @@
 			)
 		)
 	)
+	(global_label "ACDS_GPIO_3"
+		(shape output)
+		(at 187.96 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "90a7a6d6-ac0e-4698-a20f-5d70836917db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.4216 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SPI1.CS0"
 		(shape output)
 		(at 135.89 66.04 0)
@@ -5626,6 +5656,30 @@
 			)
 		)
 	)
+	(global_label "ACDS_PWM_2"
+		(shape output)
+		(at 135.89 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a4ef21aa-6a39-4a19-b1f5-00c45ebf62d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.1259 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "MMC1.CLK"
 		(shape output)
 		(at 187.96 58.42 180)
@@ -5639,6 +5693,30 @@
 		(uuid "a69c630b-6f9f-4aec-87df-cf9629afbf39")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.3245 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ACDS_PWM_3"
+		(shape output)
+		(at 187.96 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b07bc228-89ce-4e17-8f01-32ff271a832f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 172.7241 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5719,6 +5797,54 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "I2C2.SCL"
+		(shape output)
+		(at 85.09 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cca183b0-21f1-441a-82b1-1cea15484886")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.6035 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "I2C2.SDA"
+		(shape output)
+		(at 135.89 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d58498d4-5bff-4af0-a782-dd472903abae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.437 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)

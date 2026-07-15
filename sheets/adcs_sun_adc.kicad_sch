@@ -1134,7 +1134,7 @@
 			)
 		)
 	)
-	(global_label "SUN4_CH"
+	(global_label "SUN_SENS4_CH"
 		(shape input)
 		(at 133.35 91.44 180)
 		(fields_autoplaced yes)
@@ -1146,7 +1146,7 @@
 		)
 		(uuid "271d8881-de99-4ede-a778-3a79e6a9b17f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 91.44 0)
+			(at 115.7555 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1158,7 +1158,7 @@
 			)
 		)
 	)
-	(global_label "SUN6_CH"
+	(global_label "SUN_SENS6_CH"
 		(shape input)
 		(at 133.35 96.52 180)
 		(fields_autoplaced yes)
@@ -1170,7 +1170,7 @@
 		)
 		(uuid "4e1845b7-f4f1-4e32-b1c6-f521d969611b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 96.52 0)
+			(at 115.7555 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1182,7 +1182,7 @@
 			)
 		)
 	)
-	(global_label "SUN2_CH"
+	(global_label "SUN_SENS2_CH"
 		(shape input)
 		(at 133.35 86.36 180)
 		(fields_autoplaced yes)
@@ -1194,7 +1194,7 @@
 		)
 		(uuid "563f233e-9e52-4bed-8837-991d82203769")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 86.36 0)
+			(at 115.7555 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1254,7 +1254,7 @@
 			)
 		)
 	)
-	(global_label "SUN3_CH"
+	(global_label "SUN_SENS3_CH"
 		(shape input)
 		(at 133.35 88.9 180)
 		(fields_autoplaced yes)
@@ -1266,7 +1266,7 @@
 		)
 		(uuid "97a46915-10a3-4a7b-b0fc-c808cac7dbd3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 88.9 0)
+			(at 115.7555 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1278,7 +1278,7 @@
 			)
 		)
 	)
-	(global_label "SUN5_CH"
+	(global_label "SUN_SENS5_CH"
 		(shape input)
 		(at 133.35 93.98 180)
 		(fields_autoplaced yes)
@@ -1290,7 +1290,7 @@
 		)
 		(uuid "dbed2aaf-d212-4299-9037-a872c6e9df41")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 93.98 0)
+			(at 115.7555 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1326,7 +1326,7 @@
 			)
 		)
 	)
-	(global_label "SUN1_CH"
+	(global_label "SUN_SENS1_CH"
 		(shape input)
 		(at 133.35 83.82 180)
 		(fields_autoplaced yes)
@@ -1338,7 +1338,7 @@
 		)
 		(uuid "f0407acb-cfa9-463c-b8e5-48bc14001ccd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.6216 83.82 0)
+			(at 115.7555 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

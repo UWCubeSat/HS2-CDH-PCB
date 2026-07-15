@@ -4594,16 +4594,6 @@
 		)
 		(uuid "0a2c99a1-a728-4029-a46c-af9b2ad89c9f")
 	)
-	(label "LCD.DATA8"
-		(at 187.96 78.74 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1ba52525-9754-4877-8256-1aafa89989a6")
-	)
 	(label "LCD.AC_BIAS_E"
 		(at 238.76 68.58 180)
 		(effects
@@ -4693,16 +4683,6 @@
 			(justify right bottom)
 		)
 		(uuid "6a97f74f-3a9d-4737-8958-5c66c59daa97")
-	)
-	(label "LCD.DATA9"
-		(at 238.76 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "70c25c7e-4059-475a-b09c-b8cff75439c1")
 	)
 	(label "AIN0"
 		(at 85.09 81.28 0)
@@ -5473,7 +5453,7 @@
 		)
 	)
 	(global_label "UART4_RXD"
-		(shape output)
+		(shape input)
 		(at 85.09 45.72 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5664,6 +5644,30 @@
 			)
 		)
 	)
+	(global_label "UART1_RXD"
+		(shape input)
+		(at 238.76 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ef556ec-e371-4056-b981-0d16f99b6dcf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 252.4236 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "UART1_TXD"
 		(shape output)
 		(at 135.89 60.96 0)
@@ -5688,8 +5692,32 @@
 			)
 		)
 	)
-	(global_label "UART1_RXD"
+	(global_label "UART5_TXD"
 		(shape output)
+		(at 187.96 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a2955ab8-49a8-41c8-a756-1f293bdb2739")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 174.5988 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART1_RXD"
+		(shape input)
 		(at 135.89 63.5 0)
 		(fields_autoplaced yes)
 		(effects

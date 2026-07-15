@@ -78,7 +78,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "4d115d59-e66a-4f9f-ab9e-2e7383353607")
-		(property "Sheetname" "ADCS sun ADC"
+		(property "Sheetname" "ACDS sun ADC"
 			(at 15.24 114.8584 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1605,7 +1605,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 133.858 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2282,7 +2282,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 161.29 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)

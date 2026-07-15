@@ -3250,7 +3250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 20.32 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3332,7 +3332,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 177.8 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3934,7 +3934,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 171.45 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4484,7 +4484,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7u"
 			(at 165.1 41.9099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5083,7 +5083,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 20.32 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5737,7 +5737,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 20.32 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6053,7 +6053,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "4.7u"
 			(at 184.15 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6447,7 +6447,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 20.32 140.9699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6815,7 +6815,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 196.85 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6897,7 +6897,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1u"
 			(at 127 71.1199 0)
 			(show_name no)
 			(do_not_autoplace no)

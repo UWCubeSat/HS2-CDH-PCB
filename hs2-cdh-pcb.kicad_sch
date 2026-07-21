@@ -17,6 +17,52 @@
 		(uuid "13cfaebb-2822-4533-b59c-64f4a8653fac")
 	)
 	(sheet
+		(at 76.708 117.856)
+		(size 48.26 26.162)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0ac78360-e886-4a24-a8cd-28b9ba565ba4")
+		(property "Sheetname" "Payload"
+			(at 76.708 117.1444 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets\\Payload_USB.kicad_sch"
+			(at 76.708 144.6026 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 76.2 17.78)
 		(size 41.91 48.26)
 		(exclude_from_sim no)
@@ -288,6 +334,52 @@
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 15.748 159.258)
+		(size 50.546 32.258)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e60ab31a-d122-400d-8c89-d2699da485f6")
+		(property "Sheetname" "Interfacing"
+			(at 15.748 158.5464 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets\\Interfacing.kicad_sch"
+			(at 15.748 192.1006 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(page "9")
 				)
 			)
 		)

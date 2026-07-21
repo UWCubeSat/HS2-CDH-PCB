@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "F1,U1,U3-11,C1-38,FB1-3,D1-2,#PWR1-4,#PWR6-9,#PWR14-98,J1-8,IC5-8,R1-6,R13-14,H1-4",
+    "used_designators": "C1-65,D1-5,FB1-5,R1-22,J1-10,Y1-2,Q1-2,U1-18,#PWR1-152,F1,H1-4,IC1-4,P1-2,SW1,TP1",
     "variants": []
   },
   "sheets": [
@@ -699,8 +699,16 @@
       "thermal"
     ],
     [
+      "0ac78360-e886-4a24-a8cd-28b9ba565ba4",
+      "Payload"
+    ],
+    [
       "4d115d59-e66a-4f9f-ab9e-2e7383353607",
       "ACDS sun ADC"
+    ],
+    [
+      "e60ab31a-d122-400d-8c89-d2699da485f6",
+      "Interfacing"
     ]
   ],
   "text_variables": {},

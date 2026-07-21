@@ -5644,7 +5644,7 @@
 			)
 		)
 	)
-	(global_label "UART1_RXD"
+	(global_label "UART5_RXD"
 		(shape input)
 		(at 238.76 78.74 0)
 		(fields_autoplaced yes)

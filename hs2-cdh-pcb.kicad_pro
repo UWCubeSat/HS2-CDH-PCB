@@ -670,7 +670,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "U5-8,#PWR78-92,Y2-3,C17-30,J11,R16-19,FB2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -701,6 +701,10 @@
     [
       "c9e6a8cd-17ab-426c-af44-12e99e2c583c",
       "Payload_USB"
+    ],
+    [
+      "d0765b7e-1373-4d12-aae1-1a2252eb9d60",
+      "Interfacing"
     ]
   ],
   "text_variables": {},

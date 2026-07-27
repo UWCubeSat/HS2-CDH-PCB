@@ -43,7 +43,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets\\Payload_USB.kicad_sch"
+		(property "Sheetfile" "sheets/Payload_USB.kicad_sch"
 			(at 76.708 144.6026 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -365,7 +365,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets\\Interfacing.kicad_sch"
+		(property "Sheetfile" "sheets/Interfacing.kicad_sch"
 			(at 15.748 192.1006 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -6619,7 +6619,7 @@
 			)
 		)
 	)
-	(global_label "MCC1.DAT3"
+	(global_label "MMC1.DAT3"
 		(shape bidirectional)
 		(at 238.76 38.1 0)
 		(fields_autoplaced yes)
@@ -6631,7 +6631,7 @@
 		)
 		(uuid "509d68c6-7fb4-498b-afc7-7afd1d95660a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 253.1977 38.1 0)
+			(at 253.3791 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

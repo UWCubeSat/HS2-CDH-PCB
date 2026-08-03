@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.16,
-          "width": 0.41
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -531,13 +531,15 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8,
+        "track_width": 0.4,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
       },
       {
         "clearance": 0.1,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.135,
         "name": "COMM",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -648,6 +650,18 @@
       {
         "netclass": "3v3",
         "pattern": "+3V3"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/Payload_USB/USB3_5V"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/Payload_USB/USB2_5V"
+      },
+      {
+        "netclass": "5V",
+        "pattern": "/Payload_USB/USB1_5v"
       }
     ]
   },
@@ -779,7 +793,7 @@
         "uuid": "76ef893c-f05d-4950-b467-f20cb8b05570"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR144-146,#PWR157,#PWR163-165,U10",
     "variants": []
   },
   "sheets": [

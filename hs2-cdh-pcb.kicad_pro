@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.016,
-          "height": 1.7272,
-          "width": 1.7272
+          "drill": 1.1684,
+          "height": 1.6764,
+          "width": 1.6764
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -70,7 +70,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -209,7 +215,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 100,
@@ -236,7 +244,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -504,7 +517,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -670,7 +683,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "C33,C35,#PWR84,#PWR86-87,#PWR90,#PWR117-118,#PWR161-162,U19-20",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
@@ -697,10 +710,6 @@
     [
       "6355119d-218a-4863-a530-2792c4ad5269",
       "thermal"
-    ],
-    [
-      "0ac78360-e886-4a24-a8cd-28b9ba565ba4",
-      "Payload"
     ],
     [
       "4d115d59-e66a-4f9f-ab9e-2e7383353607",

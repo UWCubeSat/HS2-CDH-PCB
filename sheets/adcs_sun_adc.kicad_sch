@@ -649,6 +649,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -1063,10 +1203,22 @@
 		(uuid "41f4c6f0-7894-401d-8a97-2f8428978801")
 	)
 	(junction
+		(at 48.26 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1506fa53-0fb6-4914-9f5a-7853d0c1397a")
+	)
+	(junction
 		(at 52.07 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d4a8a12-1530-419c-8e03-b60ff93788bd")
+	)
+	(junction
+		(at 63.5 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4029aa57-e976-4fc7-b800-e6162e8511ae")
 	)
 	(junction
 		(at 59.69 33.02)
@@ -1081,6 +1233,16 @@
 	(no_connect
 		(at 39.37 72.39)
 		(uuid "b1809167-93a1-4230-bbae-d07a95923e62")
+	)
+	(wire
+		(pts
+			(xy 74.93 33.02) (xy 74.93 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02b24e64-e792-4fca-bef4-936c6f85d677")
 	)
 	(wire
 		(pts
@@ -1114,6 +1276,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 64.77) (xy 86.36 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26df597f-d9ce-45c8-8707-c72cf45cb03f")
+	)
+	(wire
+		(pts
 			(xy 59.69 33.02) (xy 59.69 49.53)
 		)
 		(stroke
@@ -1121,6 +1293,36 @@
 			(type default)
 		)
 		(uuid "399a14ca-e474-44cf-ba81-13036f81ac88")
+	)
+	(wire
+		(pts
+			(xy 78.74 64.77) (xy 69.85 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540c9730-08bd-42a7-8fa1-a511e1f9032b")
+	)
+	(wire
+		(pts
+			(xy 63.5 34.29) (xy 63.5 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5794f7c0-4ad8-4442-98af-22db87488e2d")
+	)
+	(wire
+		(pts
+			(xy 36.83 41.91) (xy 36.83 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ab23971-d475-4a47-8f8d-85cadccbf1a2")
 	)
 	(wire
 		(pts
@@ -1134,6 +1336,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 33.02) (xy 48.26 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6aa66d53-acbf-4fca-b59f-e6ff42351f80")
+	)
+	(wire
+		(pts
 			(xy 52.07 33.02) (xy 52.07 49.53)
 		)
 		(stroke
@@ -1141,6 +1353,56 @@
 			(type default)
 		)
 		(uuid "6f2f486e-de5d-4bbe-b53c-32ef32a8496a")
+	)
+	(wire
+		(pts
+			(xy 63.5 33.02) (xy 74.93 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae339c1c-422a-4143-b499-d694375b298a")
+	)
+	(wire
+		(pts
+			(xy 48.26 34.29) (xy 48.26 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b37b21da-0fa6-4e64-b07b-983f4b9e390b")
+	)
+	(wire
+		(pts
+			(xy 36.83 33.02) (xy 36.83 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4c03e22-a826-4a79-9572-684a8be50c6f")
+	)
+	(wire
+		(pts
+			(xy 74.93 41.91) (xy 74.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccfaf1f9-9d01-49ea-88fd-6538ac1bf3d9")
+	)
+	(wire
+		(pts
+			(xy 48.26 43.18) (xy 48.26 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e105c426-1409-435f-8bcf-d780604de9ca")
 	)
 	(global_label "SPI1_CS0"
 		(shape input)
@@ -1288,7 +1550,7 @@
 	)
 	(global_label "SPI1_D1"
 		(shape input)
-		(at 69.85 64.77 0)
+		(at 87.63 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1298,7 +1560,7 @@
 		)
 		(uuid "7bf3e9a4-4a19-44f6-a62c-4031542c6a87")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.6712 64.77 0)
+			(at 98.4512 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1418,7 +1680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23d78dc0-4a54-49ec-8347-ecfc903a0638")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR074"
 			(at 59.69 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1478,7 +1740,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "#PWR061")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -1486,7 +1748,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 48.26 36.83 0)
+		(at 48.26 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1495,8 +1757,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4776614a-24c1-4c1f-9ec5-20c142b10042")
-		(property "Reference" "C30"
-			(at 39.878 35.56 0)
+		(property "Reference" "C39"
+			(at 39.878 36.83 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1507,7 +1769,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 39.878 38.1 0)
+			(at 39.878 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1518,7 +1780,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 49.2252 40.64 0)
+			(at 49.2252 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1529,7 +1791,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 36.83 0)
+			(at 48.26 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1540,7 +1802,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 48.26 36.83 0)
+			(at 48.26 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1559,7 +1821,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "C30")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1577,7 +1839,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "717518ec-ffbc-49e3-b77d-dd06f77cca52")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR072"
 			(at 52.07 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -1637,7 +1899,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "#PWR059")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -1645,7 +1907,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 48.26 40.64 0)
+		(at 48.26 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1655,8 +1917,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82e7d097-df76-4675-8007-588d15cc19ac")
-		(property "Reference" "#PWR058"
-			(at 48.26 46.99 0)
+		(property "Reference" "#PWR071"
+			(at 48.26 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1667,7 +1929,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 48.26 45.72 0)
+			(at 48.26 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1677,7 +1939,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 48.26 40.64 0)
+			(at 48.26 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1688,7 +1950,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 40.64 0)
+			(at 48.26 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1699,7 +1961,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 48.26 40.64 0)
+			(at 48.26 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1715,7 +1977,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "#PWR058")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -1733,7 +1995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f0d6e6b-3368-4c27-87e2-7741fc86ef48")
-		(property "Reference" "U8"
+		(property "Reference" "U9"
 			(at 61.8333 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1839,15 +2101,15 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "U8")
+					(reference "U9")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GNDD")
-		(at 63.5 40.64 0)
+		(lib_id "power:GNDA")
+		(at 36.83 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1856,9 +2118,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ab64e954-925d-4c5f-b61d-14122d4de2ca")
-		(property "Reference" "#PWR062"
-			(at 63.5 46.99 0)
+		(uuid "a7d47143-7c4b-49e2-aea1-a240753b2a3c")
+		(property "Reference" "#PWR070"
+			(at 36.83 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1868,8 +2130,8 @@
 				)
 			)
 		)
-		(property "Value" "GNDD"
-			(at 63.5 44.45 0)
+		(property "Value" "GNDA"
+			(at 36.83 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1879,7 +2141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 40.64 0)
+			(at 36.83 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1890,7 +2152,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 40.64 0)
+			(at 36.83 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 36.83 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bb761454-5ef7-44ee-b8d1-cdb7ea33b6bb")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 63.5 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab64e954-925d-4c5f-b61d-14122d4de2ca")
+		(property "Reference" "#PWR075"
+			(at 63.5 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 63.5 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1901,7 +2241,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 63.5 40.64 0)
+			(at 63.5 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1917,7 +2257,251 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "#PWR062")
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 82.55 64.77 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d255bdf4-d0c5-4d75-b4e8-16a69061ec66")
+		(property "Reference" "R58"
+			(at 82.55 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 82.55 68.58 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 82.55 62.992 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "15f51310-807b-456d-86fe-30482c9f70ef")
+		)
+		(pin "1"
+			(uuid "f02e0865-116c-46fe-9681-7c3419f44fc0")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 36.83 38.1 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e99d5aec-f89e-440f-ab74-29987147c010")
+		(property "Reference" "C38"
+			(at 33.02 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 33.02 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 35.8648 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 36.83 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6a4a8029-374b-48bd-9ac6-b7f54b8b8c7c")
+		)
+		(pin "1"
+			(uuid "70fa6d76-cd75-4e41-a505-1da25f551d4b")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 74.93 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f54f8597-0a18-45de-9ff4-758c62e28410")
+		(property "Reference" "C41"
+			(at 78.74 36.8299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 78.74 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 75.8952 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 74.93 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "343065d0-ee1a-45b0-b97e-b1c0a1baabef")
+		)
+		(pin "1"
+			(uuid "19c96dc3-99fe-4a78-a61a-abe864f034e2")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -1934,7 +2518,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f6ac9ac9-a5c7-46fd-9a1d-db8397236e64")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR073"
 			(at 59.69 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -1993,7 +2577,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "#PWR060")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -2001,7 +2585,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 63.5 36.83 0)
+		(at 63.5 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2011,8 +2595,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc79222e-a347-4434-961c-5b5450ab0597")
-		(property "Reference" "C31"
-			(at 67.31 35.5599 0)
+		(property "Reference" "C40"
+			(at 67.31 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2023,7 +2607,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 67.31 38.0999 0)
+			(at 67.31 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2034,7 +2618,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 64.4652 40.64 0)
+			(at 64.4652 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2045,7 +2629,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 36.83 0)
+			(at 63.5 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2056,7 +2640,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 63.5 36.83 0)
+			(at 63.5 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2075,7 +2659,85 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
-					(reference "C31")
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 74.93 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe580d51-0a92-4497-98e4-3a80dd8bcfb0")
+		(property "Reference" "#PWR076"
+			(at 74.93 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 74.93 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
+			(at 74.93 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ecbfd38e-6eee-431c-8c7f-2b0b6214110c")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/4d115d59-e66a-4f9f-ab9e-2e7383353607"
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)

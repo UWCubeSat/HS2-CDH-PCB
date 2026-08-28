@@ -470,6 +470,164 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1642,6 +1800,39 @@
 		)
 		(uuid "5986431b-7d40-4812-82b6-d5850bcb0234")
 	)
+	(text "LOST"
+		(exclude_from_sim no)
+		(at 48.26 120.904 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "238a8d1e-cb5a-4f25-b975-1c66623e682e")
+	)
+	(text "CDH Board Direct Thermocouple Connectors"
+		(exclude_from_sim no)
+		(at 15.748 94.234 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34299e3f-45fc-46bb-9ced-3e1adf2d6ce5")
+	)
+	(text "FOUND"
+		(exclude_from_sim no)
+		(at 48.26 132.588 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "429a273b-c320-426f-af6f-c42343c9ffd1")
+	)
 	(text "(2) Active High EN\n"
 		(exclude_from_sim no)
 		(at 27.178 67.056 0)
@@ -1661,6 +1852,17 @@
 			)
 		)
 		(uuid "5f386c6c-fc6a-4766-bc9e-53050028fa02")
+	)
+	(text "CPU\n"
+		(exclude_from_sim no)
+		(at 49.022 109.982 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ffd8fc5-a57a-4e2f-8403-ef3ac9549d2f")
 	)
 	(text "8 Pin Multiplexers"
 		(exclude_from_sim no)
@@ -1705,10 +1907,22 @@
 		(uuid "0e600fc8-d597-41ae-893c-2001c7dd6b38")
 	)
 	(junction
+		(at 180.34 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fb51072-9fd8-4f26-8c9e-4760cd7fcd0f")
+	)
+	(junction
 		(at 45.72 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "38aad4be-41cf-4d7b-83a4-57227f0dd79c")
+	)
+	(junction
+		(at 184.15 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58f2f4aa-06ac-4bc7-9867-22aab524ebc4")
 	)
 	(junction
 		(at 95.25 35.56)
@@ -1723,12 +1937,6 @@
 		(uuid "b1005375-f1bb-45e4-97e7-1a59f203915d")
 	)
 	(junction
-		(at 180.34 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b2e12a63-ac9b-4582-a3b7-86833bdc648f")
-	)
-	(junction
 		(at 40.64 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1739,6 +1947,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd6b2188-c4c2-4f49-91b1-ffd01a6fbc08")
+	)
+	(junction
+		(at 195.58 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8118d0e-8ede-4ee4-bcdb-02515b63b81a")
 	)
 	(junction
 		(at 40.64 35.56)
@@ -1774,16 +1988,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 26.67) (xy 180.34 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0eadfec0-18a5-4679-bc63-0c6d1340e356")
-	)
-	(wire
-		(pts
 			(xy 160.02 34.29) (xy 171.45 34.29)
 		)
 		(stroke
@@ -1791,6 +1995,16 @@
 			(type default)
 		)
 		(uuid "133c4e72-6b8a-402f-84d8-d52cb23bd488")
+	)
+	(wire
+		(pts
+			(xy 184.15 35.56) (xy 195.58 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13600f76-843c-442a-aac7-259b971b4187")
 	)
 	(wire
 		(pts
@@ -1824,13 +2038,53 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 22.86) (xy 180.34 26.67)
+			(xy 180.34 25.4) (xy 180.34 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25cb504b-ea90-47ef-ac3b-008886228c7a")
+	)
+	(wire
+		(pts
+			(xy 184.15 25.4) (xy 184.15 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b37dccf-b98a-45b6-b126-926a8b991f23")
+	)
+	(wire
+		(pts
+			(xy 180.34 22.86) (xy 180.34 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "33f1f914-4787-4aff-81e8-a54b9e848a20")
+	)
+	(wire
+		(pts
+			(xy 209.55 60.96) (xy 207.01 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36e7a3b5-c2c4-48bc-bbc5-1abb620f03b5")
+	)
+	(wire
+		(pts
+			(xy 184.15 25.4) (xy 195.58 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38ac7e05-2b25-40c2-838e-f969da08210d")
 	)
 	(wire
 		(pts
@@ -1874,7 +2128,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 26.67) (xy 180.34 26.67)
+			(xy 184.15 25.4) (xy 180.34 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1901,6 +2155,16 @@
 			(type default)
 		)
 		(uuid "627d1120-ba4b-4470-83cb-4713aca43412")
+	)
+	(wire
+		(pts
+			(xy 195.58 34.29) (xy 195.58 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b4fb433-1437-41e4-a26b-28b1b2de2187")
 	)
 	(wire
 		(pts
@@ -1941,6 +2205,16 @@
 			(type default)
 		)
 		(uuid "7b9f7c65-9fcf-4eb9-95ec-008147c0e0ab")
+	)
+	(wire
+		(pts
+			(xy 195.58 25.4) (xy 195.58 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d0ee34f-8312-486b-8aa4-213b87ae91fb")
 	)
 	(wire
 		(pts
@@ -2034,6 +2308,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 60.96) (xy 190.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b63f2c85-aebc-40d9-9940-9c0423270ea9")
+	)
+	(wire
+		(pts
 			(xy 130.81 54.61) (xy 128.27 54.61)
 		)
 		(stroke
@@ -2064,6 +2348,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 34.29) (xy 184.15 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c45f0e4c-8a3f-4f3a-a20c-dbdcb3a40021")
+	)
+	(wire
+		(pts
 			(xy 100.33 26.67) (xy 100.33 36.83)
 		)
 		(stroke
@@ -2091,6 +2385,16 @@
 			(type default)
 		)
 		(uuid "defe1b08-005c-4033-aa57-90dd40459407")
+	)
+	(wire
+		(pts
+			(xy 195.58 35.56) (xy 195.58 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2fd8dd-9904-4901-b594-1996a0247cf5")
 	)
 	(wire
 		(pts
@@ -2450,6 +2754,30 @@
 			)
 		)
 	)
+	(global_label "THR_TC1_T+"
+		(shape output)
+		(at 33.02 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "510b4e8f-8efa-4875-affe-d95acb653a06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "THR_TC7_T-"
 		(shape input)
 		(at 45.72 59.69 180)
@@ -2543,6 +2871,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "THR_TC3_T+"
+		(shape output)
+		(at 33.02 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "69731194-a6c3-4799-86be-a038148d62f5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -2644,7 +2996,7 @@
 	)
 	(global_label "SPI1_D0"
 		(shape output)
-		(at 190.5 60.96 0)
+		(at 209.55 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2654,7 +3006,7 @@
 		)
 		(uuid "8d74f58b-272d-4432-8973-60905e9d9155")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 201.3212 60.96 0)
+			(at 220.3712 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2810,6 +3162,78 @@
 			)
 		)
 	)
+	(global_label "THR_TC2_T+"
+		(shape output)
+		(at 33.02 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6de709a-0e72-4c6f-8111-f856c7ea95db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "THR_TC3_T-"
+		(shape output)
+		(at 33.02 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bb49c418-1f09-4424-a2ec-23d507ed16ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "THR_TC2_T-"
+		(shape output)
+		(at 33.02 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf5db4cf-6ad6-48fa-8965-30ffd85f9ef3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "3V3A"
 		(shape input)
 		(at 45.72 22.86 90)
@@ -2882,6 +3306,30 @@
 			)
 		)
 	)
+	(global_label "THR_TC1_T-"
+		(shape output)
+		(at 33.02 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d01d8edb-e69a-475f-b4ec-18e2346062a8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 47.5907 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "THR_TC3_T-"
 		(shape input)
 		(at 45.72 49.53 180)
@@ -2941,7 +3389,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2fe85d04-e9c5-44f2-b9f7-ec5515ccd813")
-		(property "Reference" "C23"
+		(property "Reference" "C30"
 			(at 19.812 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3005,7 +3453,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C23")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -3023,7 +3471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3022c7de-e617-4426-878a-04021535676f")
-		(property "Reference" "U6"
+		(property "Reference" "U7"
 			(at 114.3 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3225,7 +3673,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "U6")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -3233,7 +3681,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 184.15 34.29 0)
+		(at 195.58 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3243,8 +3691,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e90cadd-69dd-48af-8841-580a430306b2")
-		(property "Reference" "#PWR057"
-			(at 184.15 40.64 0)
+		(property "Reference" "#PWR069"
+			(at 195.58 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3255,7 +3703,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 186.69 35.3694 0)
+			(at 198.12 37.9094 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3266,7 +3714,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 34.29 0)
+			(at 195.58 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3277,7 +3725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 34.29 0)
+			(at 195.58 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3288,7 +3736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDD\" , digital ground"
-			(at 184.15 34.29 0)
+			(at 195.58 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3304,7 +3752,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR057")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -3322,7 +3770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3f1e727c-77fd-42a6-99a5-2bcb613d2005")
-		(property "Reference" "U7"
+		(property "Reference" "U8"
 			(at 182.4833 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3423,7 +3871,89 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "U7")
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 195.58 30.48 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "43a06ae0-302e-48c6-a662-9ba89b9ca027")
+		(property "Reference" "C37"
+			(at 203.708 28.956 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 203.708 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 194.6148 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.58 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 195.58 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "851a5638-0ceb-4401-a8e9-4bd942792078")
+		)
+		(pin "2"
+			(uuid "b4fc97ff-9286-43cb-965f-33a8bc897532")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -3441,7 +3971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "440ea673-9cdd-48ef-a853-34c370bfe993")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR068"
 			(at 180.34 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3501,7 +4031,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR056")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -3519,7 +4049,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "457a6680-d950-4fd5-9624-761d4ffd6126")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR063"
 			(at 128.27 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3579,7 +4109,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR052")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -3597,7 +4127,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "535d743a-7b35-4607-9d1a-44f2b9e6fa8f")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR062"
 			(at 95.25 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -3657,7 +4187,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR051")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3675,7 +4205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ebe0c53-ec63-4c06-8b82-d48fafeb3ef3")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR065"
 			(at 171.45 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3735,7 +4265,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR054")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -3752,7 +4282,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "70aecf6f-c7b1-46e6-9894-1c4eaf66eec8")
-		(property "Reference" "C26"
+		(property "Reference" "C33"
 			(at 87.122 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3816,7 +4346,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C26")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -3833,7 +4363,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77111924-c0b1-4ea2-a99a-ff76ec959d71")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR067"
 			(at 180.34 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -3892,7 +4422,88 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR078")
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 27.94 107.95 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7f8cb1e5-7443-4a4c-ab47-9ef76666772b")
+		(property "Reference" "J4"
+			(at 27.94 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 27.94 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+			(at 27.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 27.94 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cab34981-eb42-4f79-b9b8-a6fb196c8bd9")
+		)
+		(pin "2"
+			(uuid "e8cea0e3-19f6-42ab-b88a-f2241cb54b75")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3910,7 +4521,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81c6deb8-e87c-47cd-8041-afaf6103faf7")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR066"
 			(at 175.26 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3970,7 +4581,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR055")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -3987,7 +4598,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93970b58-fd8e-4ca4-894b-da0f7801be22")
-		(property "Reference" "C24"
+		(property "Reference" "C31"
 			(at 32.512 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4051,7 +4662,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C24")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -4069,7 +4680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ae25cb9-7760-42d1-b8be-8d31320aafe6")
-		(property "Reference" "C29"
+		(property "Reference" "C36"
 			(at 187.96 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4133,7 +4744,87 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C29")
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 60.96 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e119c6d-eeb0-451c-b4aa-a66fcda8c80e")
+		(property "Reference" "R57"
+			(at 203.2 67.31 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 203.2 64.77 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 203.2 59.182 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 203.2 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c1554dbf-80af-4990-be79-b3eee8866fdf")
+		)
+		(pin "1"
+			(uuid "e0545f26-cc9d-4fcd-a4ef-1ec13faf79f9")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -4150,7 +4841,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f0f414b-e1b8-4433-964c-749e7b6d543d")
-		(property "Reference" "C25"
+		(property "Reference" "C32"
 			(at 75.692 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4214,7 +4905,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C25")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -4232,7 +4923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b59687bc-d4a8-4dc7-8cd4-437f841f3970")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR061"
 			(at 77.47 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -4292,7 +4983,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR050")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -4310,7 +5001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b67b0468-5f55-4b72-a5dc-48f37f49bd00")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR060"
 			(at 73.66 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -4370,7 +5061,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR049")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4387,7 +5078,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bcd30a64-13b2-48a8-81d3-e20bb0b69476")
-		(property "Reference" "C28"
+		(property "Reference" "C35"
 			(at 163.322 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4451,7 +5142,88 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C28")
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 27.94 130.81 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0321f36-8454-48d1-bb2a-9edd68dc5233")
+		(property "Reference" "J6"
+			(at 27.94 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 27.94 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+			(at 27.94 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 27.94 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04c9bce9-3b4e-4136-ac8e-29695dae4222")
+		)
+		(pin "2"
+			(uuid "3aecbb61-d4c3-46db-a67c-9140cc9a3663")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -4468,7 +5240,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c624cc28-7731-41a7-9a13-3a885ee84457")
-		(property "Reference" "C27"
+		(property "Reference" "C34"
 			(at 151.892 28.956 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4532,7 +5304,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "C27")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -4550,7 +5322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7ceea5f-ae64-45e6-b4fb-485e55310e14")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR059"
 			(at 40.64 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -4610,7 +5382,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR048")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4627,7 +5399,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d85ed091-5eef-4d93-896e-daed5f15661f")
-		(property "Reference" "R32"
+		(property "Reference" "R56"
 			(at 161.29 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4689,7 +5461,88 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "R32")
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 27.94 119.38 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3994bf8-f25e-41de-8306-cc8c59cbdb6e")
+		(property "Reference" "J5"
+			(at 27.94 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 27.94 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+			(at 27.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 27.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4cb48293-cbf4-4c38-a44d-bab11e51c4e5")
+		)
+		(pin "2"
+			(uuid "f3561dfd-268f-489c-b5d0-e8d904f1f539")
+		)
+		(instances
+			(project "hs2-cdh-pcb"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4707,7 +5560,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9201d93-d706-4643-947a-dbe8ac18c638")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR064"
 			(at 132.08 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -4767,7 +5620,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "#PWR053")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4785,7 +5638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1c4b92b-f2d0-4783-b618-46bcd44eb576")
-		(property "Reference" "U5"
+		(property "Reference" "U6"
 			(at 59.69 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4987,7 +5840,7 @@
 		(instances
 			(project "hs2-cdh-pcb"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/6355119d-218a-4863-a530-2792c4ad5269"
-					(reference "U5")
+					(reference "U6")
 					(unit 1)
 				)
 			)

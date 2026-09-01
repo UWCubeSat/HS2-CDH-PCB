@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "HS2_CDH") (type "KiCad") (uri "/Users/mahiremran/Desktop/GitHub/HS2-CDH-PCB/libraries/symbols/A29100-015.kicad_sym") (options "") (descr ""))
+	(lib (name "RS485 Transceiver") (type "KiCad") (uri "/Users/mahiremran/Desktop/GitHub/HS2-CDH-PCB/libraries/symbols/RS485 Transceiver.kicad_sym") (options "") (descr ""))
+)

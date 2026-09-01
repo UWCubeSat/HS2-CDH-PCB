@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "A29100-015") (type "KiCad") (uri "${KIPRJMOD}/Sagitta-Mock-PCB.pretty") (options "") (descr ""))
+)

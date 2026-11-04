@@ -45,9 +45,9 @@
   (pad 15 smd rect (at -8.750 -2.225 0) (size 0.600 1.700) (layers F.Cu F.Paste F.Mask))
   (pad 16 smd rect (at 10.600 1.125 0) (size 1.000 2.800) (layers F.Cu F.Paste F.Mask))
   (pad 17 smd rect (at -10.600 1.125 0) (size 1.000 2.800) (layers F.Cu F.Paste F.Mask))
-  (model BM15B-GHS-TBT_LF__SN_.stp
-    (at (xyz 0 0 0))
+  (model "${KIPRJMOD}/../../libraries/3dmodels/JST_BM15B-GHS-TBT_white.step"
+    (offset (xyz -11 -1.7 0.325))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
+    (rotate (xyz -90 0 180))
   )
 )

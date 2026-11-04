@@ -70,8 +70,8 @@
   (pad 15 smd rect (at 3.500 -1.774 0) (size 0.300 1.370) (layers F.Cu F.Paste F.Mask))
   (pad MP1 smd rect (at -2.500 2.295 90) (size 1.750 1.900) (layers F.Cu F.Paste F.Mask))
   (pad MP2 smd rect (at 2.500 2.295 90) (size 1.750 1.900) (layers F.Cu F.Paste F.Mask))
-  (model 502231-1500.stp
-    (at (xyz 0 -0.0027559055235442 0.12992125796521))
+  (model "${KIPRJMOD}/../../libraries/3dmodels/Molex_502231-1500.step"
+    (offset (xyz 0 -0.07 3.3))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))
   )

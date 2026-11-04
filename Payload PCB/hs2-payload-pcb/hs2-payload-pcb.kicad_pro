@@ -790,6 +790,10 @@
     [
       "cb8ed7c3-6c5b-425f-8182-a5cc106db5d7",
       "Payload_USB"
+    ],
+    [
+      "901cb16b-661d-4250-8547-4386189c8b29",
+      "IMU"
     ]
   ],
   "text_variables": {},

@@ -3672,7 +3672,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND23"
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -3693,7 +3693,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND23"
+			(property "Value" "Crystal_GND24"
 				(at 3.175 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3726,7 +3726,7 @@
 					)
 				)
 			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 3"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3781,7 +3781,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND23_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
 						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
@@ -3878,7 +3878,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND23_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -3916,10 +3916,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 3.81 0 180)
 					(length 1.27)
-					(hide yes)
-					(name "G"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3935,9 +3934,10 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 0 -5.08 90)
 					(length 1.27)
-					(name "4"
+					(hide yes)
+					(name "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8860,6 +8860,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 35.56) (xy 76.2 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8fb4619-5be8-4008-9142-88ad2803b4f6")
+	)
+	(wire
+		(pts
 			(xy 82.55 113.03) (xy 95.25 113.03)
 		)
 		(stroke
@@ -11500,7 +11510,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 27.94) (xy 73.66 27.94)
+			(xy 49.53 27.94) (xy 76.2 27.94)
 		)
 		(stroke
 			(width 0)
@@ -11760,7 +11770,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 35.56) (xy 73.66 60.96)
+			(xy 73.66 33.02) (xy 73.66 60.96)
 		)
 		(stroke
 			(width 0)
@@ -11880,7 +11890,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 35.56) (xy 73.66 35.56)
+			(xy 93.98 35.56) (xy 76.2 35.56)
 		)
 		(stroke
 			(width 0)
@@ -12357,16 +12367,6 @@
 			(type default)
 		)
 		(uuid "e5b2f512-eba3-4db6-b1b3-7c50c724df8a")
-	)
-	(wire
-		(pts
-			(xy 73.66 33.02) (xy 73.66 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6b2449c-347a-409f-a3a4-e88461e55898")
 	)
 	(wire
 		(pts
@@ -15347,7 +15347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND23")
+		(lib_id "Device:Crystal_GND24")
 		(at 40.64 222.25 90)
 		(unit 1)
 		(body_style 1)
@@ -15368,7 +15368,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Crystal_GND23"
+		(property "Value" "Crystal_GND24"
 			(at 47.498 230.632 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15401,7 +15401,7 @@
 				)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 3"
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
 			(at 40.64 222.25 0)
 			(hide yes)
 			(show_name no)

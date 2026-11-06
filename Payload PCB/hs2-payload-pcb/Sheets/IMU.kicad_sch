@@ -8,7 +8,7 @@
     (title "IMU")
     (date "2026-11-04")
     (rev "A")
-    (comment 1 "3DM-GX5-AHRS off-board on J2. U10 MAX3227E between BBB UART2 and the GX5 RS-232 port")
+    (comment 1 "3DM-GV7-INS off-board on J2. U10 MAX3227E between BBB UART2 and the GV7 RS-232 port")
   )
 
   (lib_symbols
@@ -1537,13 +1537,13 @@
 (global_label "IMU_RS232_TXD" (shape input) (at 172.72 107.95 0) (fields_autoplaced) (effects (font (size 1.27 1.27)) (justify left)) (uuid "e959c4ce-a950-4d5f-8ad9-5df56a86023d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 172.72 107.95 0) (effects (font (size 1.27 1.27)) (justify left) hide)))
 (text "BBB P9.21 (UART2 TX) via J5.9" (at 60.96 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b97464a6-89f0-4b0e-9b4a-1ea7784ff0f6"))
 (text "BBB P9.22 (UART2 RX) via J5.7" (at 60.96 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "01196222-82a5-4dd9-82d9-be1b1292c99f"))
-(text "J2.9 -> GX5 pin 4 (RS-232 RxD)" (at 166.37 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f11013bc-1cf6-4e23-a379-301f4405d621"))
-(text "J2.8 <- GX5 pin 5 (RS-232 TxD)" (at 166.37 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "676fdc30-9916-4554-a560-c04c3d52d927"))
+(text "J2.9 -> GV7 pin 4 (RS-232 RxD)" (at 166.37 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f11013bc-1cf6-4e23-a379-301f4405d621"))
+(text "J2.8 <- GV7 pin 5 (RS-232 TxD)" (at 166.37 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "676fdc30-9916-4554-a560-c04c3d52d927"))
 (text "3.3 V logic" (at 88.9 92.71 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "25d22018-1094-4e6d-b446-026c611b4318"))
 (text "RS-232 levels (about +/-5.5 V)" (at 160.02 104.14 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a4471a58-2e79-4dbd-8a41-297448e66960"))
-(text "IMU: MicroStrain 3DM-GX5-AHRS (off-board, harness on J2)" (at 40.64 40.64 0) (effects (font (size 2.54 2.54) bold) (justify left bottom)) (uuid "3d249224-d276-46b8-97b0-b296e2dc4c14"))
-(text "Converts the BBB's 3.3 V UART2 (unchanged through J5) to the RS-232 levels the GX5 needs.\nHarness: J2 (Harwin M80 2x5) to GX5 micro-D 9. Only one GX5 interface may be wired, so USB (pins 1/2) stays open." (at 40.64 48.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4069d348-29b0-4be7-a873-7ea032486479"))
-(text "Notes\n1. U10 runs from +3V3 so ROUT can never put more than 3.3 V on BBB P9.22, which is not 5 V tolerant.\n2. FORCEON and FORCEOFF (active low) are tied high, so auto-powerdown is off and the driver to the GX5 never sleeps.\n3. C26 to C29 are 0.1 uF per the TI table for VCC = 3.3 V +/-0.3 V. V+ and V- reach about +/-6.6 V, so use 16 V or higher.\n4. READY and INVALID are unused.\n5. Place U10 and C26 to C30 within about 10 mm of J2. Keep the RS-232 traces short and away from the USB pairs." (at 40.64 137.16 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "7f235ca7-7c28-4639-879e-d30835d85654"))
+(text "IMU: MicroStrain 3DM-GV7-INS (off-board, harness on J2)" (at 40.64 40.64 0) (effects (font (size 2.54 2.54) bold) (justify left bottom)) (uuid "3d249224-d276-46b8-97b0-b296e2dc4c14"))
+(text "Converts the BBB's 3.3 V UART2 (unchanged through J5) to the RS-232 levels the GV7 needs.\nHarness: J2 (Harwin M80 2x5) to GV7 micro-D 9. Only one GV7 interface may be wired, so USB (pins 1/2) stays open." (at 40.64 48.26 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4069d348-29b0-4be7-a873-7ea032486479"))
+(text "Notes\n1. U10 runs from +3V3 so ROUT can never put more than 3.3 V on BBB P9.22, which is not 5 V tolerant.\n2. FORCEON and FORCEOFF (active low) are tied high, so auto-powerdown is off and the driver to the GV7 never sleeps.\n3. C26 to C29 are 0.1 uF per the TI table for VCC = 3.3 V +/-0.3 V. V+ and V- reach about +/-6.6 V, so use 16 V or higher.\n4. READY and INVALID are unused.\n5. Place U10 and C26 to C30 within about 10 mm of J2. Keep the RS-232 traces short and away from the USB pairs." (at 40.64 137.16 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "7f235ca7-7c28-4639-879e-d30835d85654"))
 (symbol
 		(lib_id "Connector_Generic:Conn_02x05_Top_Bottom")
 		(at 254.0 101.6 0)
@@ -1566,7 +1566,7 @@
 				)
 			)
 		)
-		(property "Value" "M80-5001042 (to GX5)"
+		(property "Value" "M80-5001042 (to GV7)"
 			(at 255.27 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2008,7 +2008,7 @@
 				)
 			)
 		)
-		(property "Description" "PPS series resistor, limits back-feed into an unpowered GX5"
+		(property "Description" "PPS series resistor, limits back-feed into an unpowered GV7"
 			(at 280.67 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -2394,7 +2394,7 @@
 			)
 		)
 	)
-	(text "J2: harness to GX5 micro-D 9 (Omnetics A98100-009 pigtail)\nJ2.1 IMU_5V_SW (switched +5V) -> GX5 3 (+4 to +5.5 V input)\nJ2.5 GNDD -> GX5 8\nJ2.7 IMU_PPS -> GX5 7 (PPS in)\nJ2.8 <- GX5 5 (RS-232 TxD)\nJ2.9 -> GX5 4 (RS-232 RxD)\nJ2.10 GNDD (spare, shield drain)\nJ2.2, 3, 4, 6: not used by the GX5"
+	(text "J2: harness to GV7 micro-D 9 (Omnetics A98100-009 pigtail)\nJ2.1 IMU_5V_SW (switched +5V) -> GV7 3 (V primary, 4.2 to 16 V, 24 V abs max)\nJ2.5 GNDD -> GV7 8\nJ2.7 IMU_PPS -> GV7 7 (GPIO1, set to PPS input in software, cmd 0x0C,0x41)\nJ2.8 <- GV7 5 (RS-232 TxD)\nJ2.9 -> GV7 4 (RS-232 RxD)\nJ2.10 GNDD (spare, shield drain)\nJ2.2, 3, 4, 6: not used by the GV7\nGV7 6 (V aux, tied to pin 3 inside) and 9 (GPIO2): not wired"
 		(exclude_from_sim no)
 		(at 233.68 116.84 0)
 		(effects
@@ -2405,7 +2405,7 @@
 		)
 		(uuid "d357b9a6-2a72-4593-9112-205738dd2883")
 	)
-	(text "PPS: GNSS VPP (J4.19, 3.3 V, ~500 us) also goes to J5.27 / BBB.\nR17 limits back-feed while the GX5 is unpowered."
+	(text "PPS: GNSS VPP (J4.19, 3.3 V, ~500 us) also goes to J5.27 / BBB.\nR17 limits back-feed while the GV7 is unpowered."
 		(exclude_from_sim no)
 		(at 233.68 71.12 0)
 		(effects
@@ -3939,7 +3939,7 @@
 				)
 			)
 		)
-		(property "Description" "5 V TVS at J2. GX5 pin 3 max 5.5 V: pick the lowest clamp available"
+		(property "Description" "5 V TVS at J2 for ESD and harness transients. GV7 input is rated 4.2 to 16 V (24 V abs max) with its own protection"
 			(at 347.98 127 0)
 			(hide yes)
 			(show_name no)
@@ -4367,7 +4367,7 @@
 		)
 		(uuid "d6ddee67-eda6-4e96-ab05-27251be7dd49")
 	)
-	(text "U11 IMU load switch\nEN = IMU_SYNC_IN (J5.13, BBB P8.7). R14 pull-down keeps the IMU off until software enables it.\n~{FAULT} = IMU_SYNC_OUT (J5.11, BBB P8.9), open drain, low = overcurrent. R15 pull-up to +3V3.\nR16 = 88.7k 1%: current limit 262 to 342 mA, 300 mA nominal (datasheet Table 9-2).\nTPS2553-1 latches off after 7.5 ms of overcurrent. Software clears it by toggling EN (P8.7) low then high.\nFB1, C32 and D6 protect the harness supply at J2."
+	(text "U11 IMU load switch\nEN = IMU_SYNC_IN (J5.13, BBB P8.7). R14 pull-down keeps the IMU off until software enables it (EN turns on above 1.1 V; if P8.7 pulls up at reset, fit 4.7k or 2.2k).\n~{FAULT} = IMU_SYNC_OUT (J5.11, BBB P8.9), open drain, low = overcurrent. R15 pull-up to +3V3.\nR16 = 88.7k 1%: current limit 262 to 342 mA, 300 mA nominal (datasheet Table 9-2).\nTPS2553-1 latches off after 7.5 ms of overcurrent. Software clears it by toggling EN (P8.7) low then high.\nFB1, C32 and D6 protect the harness supply at J2."
 		(exclude_from_sim no)
 		(at 304.8 152.4 0)
 		(effects

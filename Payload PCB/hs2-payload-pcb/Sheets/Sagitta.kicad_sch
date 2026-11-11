@@ -1182,6 +1182,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 -6.35 0)
 				(show_name no)
@@ -1204,9 +1205,9 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 				(at 0 0 0)
-				(hide yes)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1215,9 +1216,20 @@
 			)
 			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2553.pdf"
 				(at 0 0 0)
-				(hide yes)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1256,6 +1268,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at -10.16 -2.54 0)
 					(length 2.54)
@@ -1267,24 +1297,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1310,24 +1322,6 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 5.08 -10.16 90)
 					(length 2.54)
@@ -1346,61 +1340,163 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-    (property "Reference" "#PWR" (at 0 -3.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 0 3.556 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "global power" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "+3V3_0_1"
-      (polyline
-        (pts
-          (xy -0.762 1.27)
-          (xy 0 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 0)
-          (xy 0 2.54)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 2.54)
-          (xy 0.762 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "+3V3_1_1"
-      (pin power_in line (at 0 0 90) (length 0) hide
-        (name "+3V3" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
+		(symbol "power:+3V3"
+			(power global)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -1677,6 +1773,17 @@
 		)
 		(uuid "af95fb39-e867-4c17-9ec7-2d8175019e70")
 	)
+	(text "Sagitta star tracker (arcsec SGT-ARC-MAN v11.8, ch. 3)\nSupply 4.5 to 5.5 V, about 1.4 W (280 mA) imaging. arcsec requires overcurrent protection at 1 A or less.\nU12 TPS2553-1 switches +5V to J6.2. R21 43.2k sets the limit to 544 to 673 mA. On overcurrent for 7.5 ms it latches off:\nsoftware clears it by taking SGT_EN low, then high.\nSGT_EN: J5.26 -> CDH BBB P9.23 (GPIO1_17), high = on. R20 holds Sagitta off while the BBB boots.\nBefore taking SGT_EN low, disable the CDH RS-485 driver (P8.40), so it does not drive an unpowered Sagitta.\nJ6: JST BM15B-GHS-TBT. Harness = Omnetics MNPO-15-WD-18.0-N-EJS-C pigtail (mates Sagitta MNSO-15-AA-N-ETH-M),\nwires crimped 1:1 into GHR-15V-S. Pin 1 GND, 2 5V, 3 Y (TX+), 4 Z (TX-), 5 B (RX-), 6 A (RX+), 7 to 15 internal, not connected."
+		(exclude_from_sim no)
+		(at 45.72 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d5af15aa-b214-4585-be0e-2bccc64c1d6b")
+	)
 	(junction
 		(at 194.31 124.46)
 		(diameter 0)
@@ -1694,6 +1801,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7548b196-35aa-4998-9e3c-9f61d3b74339")
+	)
+	(junction
+		(at 76.2 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8244b6c6-acc7-40fc-871c-575565409cad")
+	)
+	(junction
+		(at 50.8 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e1a0ebf-2705-4ee4-9539-3b15d46f6165")
 	)
 	(junction
 		(at 208.28 114.3)
@@ -1845,6 +1964,36 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 101.6) (xy 78.74 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881d39ee-c5cd-4a4b-8ea9-0aa481073ba7")
+	)
+	(wire
+		(pts
+			(xy 71.12 106.68) (xy 78.74 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "884cfab2-5d3e-4fad-8ff2-82559b0ba5a7")
+	)
+	(wire
+		(pts
+			(xy 99.06 106.68) (xy 116.84 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6bba81-f538-4987-b3f2-2699e7f200b7")
+	)
+	(wire
+		(pts
 			(xy 208.28 116.84) (xy 208.28 114.3)
 		)
 		(stroke
@@ -1865,6 +2014,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 101.6) (xy 111.76 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48db611-7b62-4d67-8938-c1becf8886eb")
+	)
+	(wire
+		(pts
 			(xy 228.6 137.16) (xy 233.68 137.16)
 		)
 		(stroke
@@ -1872,6 +2031,16 @@
 			(type default)
 		)
 		(uuid "a4ef4acb-05dc-45f2-9a78-65eedf3b6d81")
+	)
+	(wire
+		(pts
+			(xy 50.8 99.06) (xy 50.8 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a61de3f3-56ee-4020-a943-daa6ffbc1694")
 	)
 	(wire
 		(pts
@@ -1892,6 +2061,36 @@
 			(type default)
 		)
 		(uuid "f9ce98cb-9eee-4e3a-ac98-46b9ac3e0f0f")
+	)
+	(label "SGT_FAULT"
+		(at 101.6 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "722a1ef8-6a92-4bc1-ba9d-723bb6906e95")
+	)
+	(label "SGT_5V"
+		(at 220.98 102.87 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77cbe0a3-9818-42f4-a435-6553e39a0d25")
+	)
+	(label "SGT_5V"
+		(at 111.76 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b852dd0-e2e3-40c7-bd8a-70767ccf0934")
 	)
 	(global_label "SGT_RS485_RX+"
 		(shape input)
@@ -2061,6 +2260,30 @@
 			)
 		)
 	)
+	(global_label "SGT_EN"
+		(shape input)
+		(at 71.12 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cdbb205a-0169-4f8d-b8e3-4e5291da14e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "SGT_RS485_RX+"
 		(shape input)
 		(at 156.21 121.92 180)
@@ -2082,6 +2305,191 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 50.8 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ad9e713-8583-48ff-a804-3804d03ab408")
+		(property "Reference" "C33"
+			(at 53.975 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 53.975 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 50.8 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U12 input bypass, at pin 1"
+			(at 50.8 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e0f80388-d602-4ab8-808f-525f6b6c4783")
+		)
+		(pin "2"
+			(uuid "dfa06fb6-9ced-4e26-854d-f296c44d4f4e")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IMU_local:TPS2553DBV")
+		(at 88.9 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1db2cb73-4f39-4fcc-b576-6779f5204f62")
+		(property "Reference" "U12"
+			(at 88.9 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TPS2553DBV-1"
+			(at 88.9 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 88.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2553.pdf"
+			(at 88.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Sagitta load switch, latch-off, active-high EN. Same BOM line as U11"
+			(at 88.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS2553DBVR-1"
+			(at 88.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c816f648-fe51-4088-95e5-52eadc78f28a")
+		)
+		(pin "2"
+			(uuid "ee5bc8a3-848f-4948-a466-a5c103299233")
+		)
+		(pin "3"
+			(uuid "d30dcdc5-0948-4782-8c1f-d390bc91fc34")
+		)
+		(pin "4"
+			(uuid "3eb60ae9-ee28-4013-950a-f8c8aeb20f49")
+		)
+		(pin "5"
+			(uuid "84c1544a-037f-46be-a7fb-7c16835d85a1")
+		)
+		(pin "6"
+			(uuid "b0c03bba-45cd-43e5-b461-e2b573dc11c0")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "U12")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -2273,6 +2681,83 @@
 	)
 	(symbol
 		(lib_id "power:GNDD")
+		(at 50.8 109.22 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "4ade9f46-0ed2-40c9-a1a5-1cba348886ac")
+		(property "Reference" "#PWR0302"
+			(at 50.8 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 50.8 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "174fbdf6-11b2-4df3-b0c9-80cd088ccf68")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "#PWR0302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
 		(at 194.31 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -2343,6 +2828,168 @@
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ac53e80-6872-46f7-8c25-35ea4f4790ed")
+		(property "Reference" "R20"
+			(at 79.375 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 79.375 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U12 EN pull-down: Sagitta off at boot"
+			(at 76.2 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f21441a2-7955-42d7-8752-c853522489e1")
+		)
+		(pin "2"
+			(uuid "f2fddaab-ca1e-403a-9a97-62e72c7bad23")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "62223305-87f8-4e53-866a-edc1c6005c9f")
+		(property "Reference" "R22"
+			(at 120.015 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 120.015 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 116.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "U12 FAULT pull-up (open drain)"
+			(at 116.84 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "627eb074-46fb-419b-b0be-afb7aebca085")
+		)
+		(pin "2"
+			(uuid "7c3bb8eb-3e22-487b-b257-1eba533e89a2")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -2420,6 +3067,83 @@
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 88.9 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "8d8ec1b5-2d80-47df-8eb6-892d4a437b48")
+		(property "Reference" "#PWR0304"
+			(at 88.9 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 88.9 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 88.9 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e7d7a20-44a7-4807-a9cc-f3870410b566")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -2683,6 +3407,237 @@
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDD")
+		(at 76.2 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "acb1ab30-99b7-43c6-aaf3-b18d8e342bb9")
+		(property "Reference" "#PWR0303"
+			(at 76.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GNDD"
+			(at 76.2 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc0dd187-49d8-4910-8a65-fc5e4ef2af1f")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "#PWR0303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 116.84 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "c0ba4e7d-c46e-4f11-999c-b556a143666a")
+		(property "Reference" "#PWR0306"
+			(at 116.84 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 116.84 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 116.84 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92e9b23b-deae-4227-8148-1095d4d9dc04")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "#PWR0306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 50.8 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "d3544888-e44b-4165-ba52-6bcba8308bbd")
+		(property "Reference" "#PWR0301"
+			(at 50.8 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 50.8 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ffa9af1d-eff8-4665-b4b3-fb31a98cc515")
+		)
+		(instances
+			(project "hs2-payload-pcb"
+				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -2963,308 +3918,9 @@
 			)
 		)
 	)
-	(label "SGT_5V"
-		(at 220.98 102.87 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "77cbe0a3-9818-42f4-a435-6553e39a0d25")
-	)
-	(symbol
-		(lib_id "IMU_local:TPS2553DBV")
-		(at 88.9 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1db2cb73-4f39-4fcc-b576-6779f5204f62")
-		(property "Reference" "U12"
-			(at 88.9 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TPS2553DBV-1"
-			(at 88.9 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 88.9 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps2553.pdf"
-			(at 88.9 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Sagitta load switch, latch-off, active-high EN. Same BOM line as U11"
-			(at 88.9 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TPS2553DBVR-1"
-			(at 88.9 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c816f648-fe51-4088-95e5-52eadc78f28a")
-		)
-		(pin "2"
-			(uuid "ee5bc8a3-848f-4948-a466-a5c103299233")
-		)
-		(pin "3"
-			(uuid "d30dcdc5-0948-4782-8c1f-d390bc91fc34")
-		)
-		(pin "4"
-			(uuid "3eb60ae9-ee28-4013-950a-f8c8aeb20f49")
-		)
-		(pin "5"
-			(uuid "84c1544a-037f-46be-a7fb-7c16835d85a1")
-		)
-		(pin "6"
-			(uuid "b0c03bba-45cd-43e5-b461-e2b573dc11c0")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "U12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 50.8 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "d3544888-e44b-4165-ba52-6bcba8308bbd")
-		(property "Reference" "#PWR0301"
-			(at 50.8 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 50.8 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ffa9af1d-eff8-4665-b4b3-fb31a98cc515")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 50.8 99.06) (xy 50.8 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a61de3f3-56ee-4020-a943-daa6ffbc1694")
-	)
-	(wire
-		(pts
-			(xy 50.8 101.6) (xy 78.74 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "881d39ee-c5cd-4a4b-8ea9-0aa481073ba7")
-	)
-	(junction
-		(at 50.8 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8e1a0ebf-2705-4ee4-9539-3b15d46f6165")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 50.8 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0ad9e713-8583-48ff-a804-3804d03ab408")
-		(property "Reference" "C33"
-			(at 53.975 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 53.975 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 50.8 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U12 input bypass, at pin 1"
-			(at 50.8 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e0f80388-d602-4ab8-808f-525f6b6c4783")
-		)
-		(pin "2"
-			(uuid "dfa06fb6-9ced-4e26-854d-f296c44d4f4e")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(symbol
 		(lib_id "power:GNDD")
-		(at 50.8 109.22 0)
+		(at 93.98 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3272,9 +3928,9 @@
 		(on_board yes)
 		(in_pos_files no)
 		(dnp no)
-		(uuid "4ade9f46-0ed2-40c9-a1a5-1cba348886ac")
-		(property "Reference" "#PWR0302"
-			(at 50.8 115.57 0)
+		(uuid "e14ce48e-b936-4989-a563-247cedaee6d4")
+		(property "Reference" "#PWR0305"
+			(at 93.98 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3285,7 +3941,7 @@
 			)
 		)
 		(property "Value" "GNDD"
-			(at 50.8 113.03 0)
+			(at 93.98 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3295,7 +3951,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 109.22 0)
+			(at 93.98 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3306,7 +3962,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 109.22 0)
+			(at 93.98 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3317,7 +3973,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 109.22 0)
+			(at 93.98 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3328,287 +3984,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "174fbdf6-11b2-4df3-b0c9-80cd088ccf68")
+			(uuid "b15f99ad-3c58-4fb9-b18e-7990623f10de")
 		)
 		(instances
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0302")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "SGT_EN"
-		(shape input)
-		(at 71.12 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cdbb205a-0169-4f8d-b8e3-4e5291da14e8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.12 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 71.12 106.68) (xy 78.74 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "884cfab2-5d3e-4fad-8ff2-82559b0ba5a7")
-	)
-	(junction
-		(at 76.2 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8244b6c6-acc7-40fc-871c-575565409cad")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 76.2 110.49 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5ac53e80-6872-46f7-8c25-35ea4f4790ed")
-		(property "Reference" "R20"
-			(at 79.375 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 79.375 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U12 EN pull-down: Sagitta off at boot"
-			(at 76.2 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f21441a2-7955-42d7-8752-c853522489e1")
-		)
-		(pin "2"
-			(uuid "f2fddaab-ca1e-403a-9a97-62e72c7bad23")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 76.2 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "acb1ab30-99b7-43c6-aaf3-b18d8e342bb9")
-		(property "Reference" "#PWR0303"
-			(at 76.2 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 76.2 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fc0dd187-49d8-4910-8a65-fc5e4ef2af1f")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0303")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 88.9 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "8d8ec1b5-2d80-47df-8eb6-892d4a437b48")
-		(property "Reference" "#PWR0304"
-			(at 88.9 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 88.9 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1e7d7a20-44a7-4807-a9cc-f3870410b566")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0304")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -3694,294 +4075,6 @@
 				)
 			)
 		)
-	)
-	(symbol
-		(lib_id "power:GNDD")
-		(at 93.98 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "e14ce48e-b936-4989-a563-247cedaee6d4")
-		(property "Reference" "#PWR0305"
-			(at 93.98 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GNDD"
-			(at 93.98 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 93.98 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b15f99ad-3c58-4fb9-b18e-7990623f10de")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 99.06 101.6) (xy 111.76 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a48db611-7b62-4d67-8938-c1becf8886eb")
-	)
-	(label "SGT_5V"
-		(at 111.76 101.6 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7b852dd0-e2e3-40c7-bd8a-70767ccf0934")
-	)
-	(wire
-		(pts
-			(xy 99.06 106.68) (xy 116.84 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c6bba81-f538-4987-b3f2-2699e7f200b7")
-	)
-	(label "SGT_FAULT"
-		(at 101.6 106.68 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "722a1ef8-6a92-4bc1-ba9d-723bb6906e95")
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 116.84 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "62223305-87f8-4e53-866a-edc1c6005c9f")
-		(property "Reference" "R22"
-			(at 120.015 101.6 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 120.015 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 116.84 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "U12 FAULT pull-up (open drain)"
-			(at 116.84 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "627eb074-46fb-419b-b0be-afb7aebca085")
-		)
-		(pin "2"
-			(uuid "7c3bb8eb-3e22-487b-b257-1eba533e89a2")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 116.84 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "c0ba4e7d-c46e-4f11-999c-b556a143666a")
-		(property "Reference" "#PWR0306"
-			(at 116.84 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 116.84 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 116.84 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "92e9b23b-deae-4227-8148-1095d4d9dc04")
-		)
-		(instances
-			(project "hs2-payload-pcb"
-				(path "/76ef893c-f05d-4950-b467-f20cb8b05570/5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b"
-					(reference "#PWR0306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(text "Sagitta star tracker (arcsec SGT-ARC-MAN v11.8, ch. 3)\nSupply 4.5 to 5.5 V, about 1.4 W (280 mA) imaging. arcsec requires overcurrent protection at 1 A or less.\nU12 TPS2553-1 switches +5V to J6.2. R21 43.2k sets the limit to 544 to 673 mA. On overcurrent for 7.5 ms it latches off:\nsoftware clears it by taking SGT_EN low, then high.\nSGT_EN: J5.26 -> CDH BBB P9.23 (GPIO1_17), high = on. R20 holds Sagitta off while the BBB boots.\nBefore taking SGT_EN low, disable the CDH RS-485 driver (P8.40), so it does not drive an unpowered Sagitta.\nJ6: JST BM15B-GHS-TBT. Harness = Omnetics MNPO-15-WD-18.0-N-EJS-C pigtail (mates Sagitta MNSO-15-AA-N-ETH-M),\nwires crimped 1:1 into GHR-15V-S. Pin 1 GND, 2 5V, 3 Y (TX+), 4 Z (TX-), 5 B (RX-), 6 A (RX+), 7 to 15 internal, not connected."
-		(exclude_from_sim no)
-		(at 45.72 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d5af15aa-b214-4585-be0e-2bccc64c1d6b")
 	)
 	(sheet_instances
 		(path "/"

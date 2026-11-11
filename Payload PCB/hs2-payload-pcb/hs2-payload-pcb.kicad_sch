@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 18.288 16.51)
-		(size 75.946 70.866)
+		(at 101.6 45.72)
+		(size 50.8 20.32)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -20,9 +20,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "cb8ed7c3-6c5b-425f-8182-a5cc106db5d7")
-		(property "Sheetname" "Payload_USB"
-			(at 18.288 15.7984 0)
+		(uuid "5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b")
+		(property "Sheetname" "Sagitta"
+			(at 101.6 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32,8 +32,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sheets/Payload_USB.kicad_sch"
-			(at 18.288 87.9606 0)
+		(property "Sheetfile" "Sheets/Sagitta.kicad_sch"
+			(at 101.6 66.6246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -46,7 +46,7 @@
 		(instances
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570"
-					(page "2")
+					(page "4")
 				)
 			)
 		)
@@ -98,8 +98,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 45.72)
-		(size 50.8 20.32)
+		(at 18.288 16.51)
+		(size 75.946 70.866)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -112,9 +112,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b")
-		(property "Sheetname" "Sagitta"
-			(at 101.6 45.0084 0)
+		(uuid "cb8ed7c3-6c5b-425f-8182-a5cc106db5d7")
+		(property "Sheetname" "Payload_USB"
+			(at 18.288 15.7984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -124,8 +124,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sheets/Sagitta.kicad_sch"
-			(at 101.6 66.6246 0)
+		(property "Sheetfile" "Sheets/Payload_USB.kicad_sch"
+			(at 18.288 87.9606 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -138,7 +138,7 @@
 		(instances
 			(project "hs2-payload-pcb"
 				(path "/76ef893c-f05d-4950-b467-f20cb8b05570"
-					(page "4")
+					(page "2")
 				)
 			)
 		)

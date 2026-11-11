@@ -655,7 +655,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "Gerbers/",
+      "plot": "../../../Downloads/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -794,6 +794,10 @@
     [
       "901cb16b-661d-4250-8547-4386189c8b29",
       "IMU"
+    ],
+    [
+      "5a6e7c21-3f4b-4d2e-9a8b-1c0d2e3f4a5b",
+      "Sagitta"
     ]
   ],
   "text_variables": {},

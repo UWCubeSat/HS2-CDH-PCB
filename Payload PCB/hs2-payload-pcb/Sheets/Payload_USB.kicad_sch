@@ -13254,7 +13254,7 @@
 		)
 		(uuid "071d2e5d-c67c-40d7-8cb4-3a2aabda1dc7")
 	)
-	(label "USBD_DN1-"
+	(label "USBD_DN1+"
 		(at 95.25 110.49 180)
 		(effects
 			(font
@@ -13344,7 +13344,7 @@
 		)
 		(uuid "21657483-dd7c-40f5-90ce-21cbb3e3428d")
 	)
-	(label "USBD_DN1+"
+	(label "USBD_DN1-"
 		(at 60.96 113.03 0)
 		(effects
 			(font
@@ -13474,7 +13474,7 @@
 		)
 		(uuid "50c0547d-5975-4283-b029-509b275cb3bc")
 	)
-	(label "USBD_DN2-"
+	(label "USBD_DN2+"
 		(at 97.79 110.49 0)
 		(effects
 			(font
@@ -13564,7 +13564,7 @@
 		)
 		(uuid "78bb92e8-b9a1-4795-a525-f17a4543b96f")
 	)
-	(label "USBD_DN2+"
+	(label "USBD_DN2-"
 		(at 97.79 113.03 0)
 		(effects
 			(font
@@ -13694,7 +13694,7 @@
 		)
 		(uuid "97b8c180-c6de-4a3e-b40d-042adeee5be6")
 	)
-	(label "USBD_DN1-"
+	(label "USBD_DN1+"
 		(at 60.96 110.49 0)
 		(effects
 			(font
@@ -13724,7 +13724,7 @@
 		)
 		(uuid "9fa5f9ed-819d-4262-a54e-59488d949737")
 	)
-	(label "USBD_DN1+"
+	(label "USBD_DN1-"
 		(at 95.25 113.03 180)
 		(effects
 			(font
@@ -13864,7 +13864,7 @@
 		)
 		(uuid "cc03723a-7a41-4052-8780-359047147ea0")
 	)
-	(label "USBD_DN2-"
+	(label "USBD_DN2+"
 		(at 128.27 110.49 180)
 		(effects
 			(font
@@ -13924,7 +13924,7 @@
 		)
 		(uuid "f12aabf4-e043-4987-a9f8-7dbd81f03291")
 	)
-	(label "USBD_DN2+"
+	(label "USBD_DN2-"
 		(at 128.27 113.03 180)
 		(effects
 			(font

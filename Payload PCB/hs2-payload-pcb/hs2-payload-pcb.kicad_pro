@@ -560,8 +560,8 @@
       },
       {
         "clearance": 0.05,
-        "diff_pair_gap": 0.2,
-        "diff_pair_width": 0.3445,
+        "diff_pair_gap": 0.2355,
+        "diff_pair_width": 0.309,
         "name": "USB_DIFF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
